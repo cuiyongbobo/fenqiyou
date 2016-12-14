@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFGuideViewController">
+            <connections>
+                <outlet property="guideFirstImageView" destination="XHz-NZ-9ce" id="yYc-ef-wnn"/>
+                <outlet property="guideFourthImageView" destination="qMT-nL-Uak" id="eu7-3C-V17"/>
+                <outlet property="guideScrollView" destination="KlZ-g6-HbB" id="Z9O-uK-xzK"/>
+                <outlet property="guideSecondImageView" destination="3WP-QU-n1U" id="PIT-t3-Kly"/>
+                <outlet property="guideThirdImageView" destination="bIS-0y-Taf" id="Fjd-AT-GJw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-g6-HbB">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XHz-NZ-9ce"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-QU-n1U"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bIS-0y-Taf"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qMT-nL-Uak"/>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XHz-NZ-9ce" firstAttribute="leading" secondItem="KlZ-g6-HbB" secondAttribute="leading" id="1jI-Ln-mwy"/>
+                        <constraint firstItem="3WP-QU-n1U" firstAttribute="height" secondItem="XHz-NZ-9ce" secondAttribute="height" id="42y-RD-fUK"/>
+                        <constraint firstItem="bIS-0y-Taf" firstAttribute="height" secondItem="XHz-NZ-9ce" secondAttribute="height" id="7EN-y9-aoO"/>
+                        <constraint firstItem="3WP-QU-n1U" firstAttribute="width" secondItem="XHz-NZ-9ce" secondAttribute="width" id="DNJ-Ww-Xd7"/>
+                        <constraint firstItem="bIS-0y-Taf" firstAttribute="top" secondItem="XHz-NZ-9ce" secondAttribute="top" id="IUZ-OO-wOV"/>
+                        <constraint firstItem="bIS-0y-Taf" firstAttribute="leading" secondItem="3WP-QU-n1U" secondAttribute="trailing" id="Kcf-rd-Abp"/>
+                        <constraint firstItem="XHz-NZ-9ce" firstAttribute="top" secondItem="KlZ-g6-HbB" secondAttribute="top" id="NqG-Pr-k32"/>
+                        <constraint firstAttribute="bottom" secondItem="XHz-NZ-9ce" secondAttribute="bottom" id="Oz2-Xz-wTz"/>
+                        <constraint firstItem="XHz-NZ-9ce" firstAttribute="width" secondItem="KlZ-g6-HbB" secondAttribute="width" id="PF8-lq-Vcv"/>
+                        <constraint firstItem="XHz-NZ-9ce" firstAttribute="height" secondItem="KlZ-g6-HbB" secondAttribute="height" id="TVY-DU-CV9"/>
+                        <constraint firstItem="qMT-nL-Uak" firstAttribute="height" secondItem="XHz-NZ-9ce" secondAttribute="height" id="bVQ-lP-ppl"/>
+                        <constraint firstItem="bIS-0y-Taf" firstAttribute="leading" secondItem="3WP-QU-n1U" secondAttribute="trailing" id="cTK-Au-HDb"/>
+                        <constraint firstItem="qMT-nL-Uak" firstAttribute="width" secondItem="XHz-NZ-9ce" secondAttribute="width" id="dHQ-2j-jCB"/>
+                        <constraint firstItem="3WP-QU-n1U" firstAttribute="leading" secondItem="XHz-NZ-9ce" secondAttribute="trailing" id="dSi-4Y-Bsv"/>
+                        <constraint firstItem="qMT-nL-Uak" firstAttribute="top" secondItem="XHz-NZ-9ce" secondAttribute="top" id="gr8-lA-hfM"/>
+                        <constraint firstItem="qMT-nL-Uak" firstAttribute="leading" secondItem="bIS-0y-Taf" secondAttribute="trailing" id="kcP-08-8f2"/>
+                        <constraint firstItem="bIS-0y-Taf" firstAttribute="width" secondItem="XHz-NZ-9ce" secondAttribute="width" id="r1z-9X-YxB"/>
+                        <constraint firstAttribute="trailing" secondItem="qMT-nL-Uak" secondAttribute="trailing" id="tiv-xv-UGh"/>
+                        <constraint firstItem="qMT-nL-Uak" firstAttribute="leading" secondItem="bIS-0y-Taf" secondAttribute="trailing" id="wKi-To-upB"/>
+                        <constraint firstItem="3WP-QU-n1U" firstAttribute="top" secondItem="XHz-NZ-9ce" secondAttribute="top" id="y5Q-2v-ga1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KlZ-g6-HbB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8PK-Vm-cwU"/>
+                <constraint firstItem="KlZ-g6-HbB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Wy-2A-J4R"/>
+                <constraint firstAttribute="trailing" secondItem="KlZ-g6-HbB" secondAttribute="trailing" id="fdH-hW-AfW"/>
+                <constraint firstAttribute="bottom" secondItem="KlZ-g6-HbB" secondAttribute="bottom" id="hwa-ap-yOl"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

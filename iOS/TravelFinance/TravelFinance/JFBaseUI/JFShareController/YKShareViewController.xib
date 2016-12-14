@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YKShareViewController">
+            <connections>
+                <outlet property="bottomBgView" destination="MXJ-1c-dWA" id="wU1-g2-xHb"/>
+                <outlet property="bottomView" destination="TeO-9E-PpM" id="CnV-V5-T6t"/>
+                <outlet property="hCstOfHLine" destination="heW-8x-s7r" id="vhg-Cq-D0H"/>
+                <outlet property="heightCstOfContentView" destination="iE9-XM-h8o" id="Sg8-eD-huA"/>
+                <outlet property="leadingCstOfLeftBottomBtn" destination="ZNi-80-CFP" id="zzu-So-s6E"/>
+                <outlet property="leadingCstOfLeftTopBtn" destination="PkY-6M-8Dk" id="pkS-p0-kt6"/>
+                <outlet property="qZoneShareBtn" destination="oeY-m5-wEP" id="O8L-uS-cNW"/>
+                <outlet property="qqShareBtn" destination="vKP-7r-SLt" id="LhS-fS-qbA"/>
+                <outlet property="topBtn" destination="QoQ-wt-zGk" id="vVd-IJ-7TC"/>
+                <outlet property="trailingCstOfRightBottomBtn" destination="4El-Qb-HX2" id="KXg-CG-z8A"/>
+                <outlet property="trailingCstOfRightTopBtn" destination="Vae-UP-VVF" id="N9Y-tb-2GK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wChatFriendsShareBtn" destination="GoL-qa-vXl" id="bO3-ad-qcE"/>
+                <outlet property="wChatShareBtn" destination="dfr-Hh-1B6" id="PsA-bY-o69"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeO-9E-PpM" userLabel="bottomView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXJ-1c-dWA" userLabel="bottomBgView">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-9p-hY6">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="DIV-VJ-xTZ"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="M2P-fe-084"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="M2P-fe-084"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="hideSelf:" destination="-1" eventType="touchUpInside" id="jaR-SU-0GT"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcP-0O-13V" userLabel="contentBgView">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfr-Hh-1B6">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="85" id="TQu-0t-Coa"/>
+                                        <constraint firstAttribute="width" constant="65" id="egU-Bs-0Jm"/>
+                                        <constraint firstAttribute="width" secondItem="dfr-Hh-1B6" secondAttribute="height" id="rX5-YD-qLQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="-65" minY="70" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="朋友圈" image="share_wxTimeLine">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="rX5-YD-qLQ"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="wxShareTimeLineEvent:" destination="-1" eventType="touchUpInside" id="5l0-9N-Pxv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeY-m5-wEP">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="oeY-m5-wEP" secondAttribute="height" id="U6z-FR-gwL"/>
+                                        <constraint firstAttribute="height" constant="85" id="UNm-cn-R2w"/>
+                                        <constraint firstAttribute="width" constant="65" id="k9a-fS-Xdc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="-65" minY="70" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="QQ空间" image="share_qZone">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="U6z-FR-gwL"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="qqShareTimeLineEvent:" destination="-1" eventType="touchUpInside" id="fzD-7i-nLq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoL-qa-vXl">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="Aze-4v-G5k"/>
+                                        <constraint firstAttribute="width" secondItem="GoL-qa-vXl" secondAttribute="height" id="Cm6-ip-G37"/>
+                                        <constraint firstAttribute="height" constant="85" id="IEh-W4-Nkk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="-65" minY="70" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="微信好友" image="share_wxSence">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Cm6-ip-G37"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="wxShareSessionEvent:" destination="-1" eventType="touchUpInside" id="0Gk-S2-Nlt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKP-7r-SLt">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="85" id="ZVl-dG-Ixr"/>
+                                        <constraint firstAttribute="width" secondItem="vKP-7r-SLt" secondAttribute="height" id="mie-Rg-Qn3"/>
+                                        <constraint firstAttribute="width" constant="65" id="qhT-4w-83E"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <inset key="titleEdgeInsets" minX="-65" minY="70" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="QQ好友" image="share_qq">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="mie-Rg-Qn3"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="qqShareBtnEvent:" destination="-1" eventType="touchUpInside" id="aFV-uY-YGk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="oeY-m5-wEP" secondAttribute="trailing" constant="50" id="4El-Qb-HX2"/>
+                                <constraint firstAttribute="bottom" secondItem="oeY-m5-wEP" secondAttribute="bottom" constant="19" id="GUr-8X-EbY"/>
+                                <constraint firstItem="GoL-qa-vXl" firstAttribute="leading" secondItem="kcP-0O-13V" secondAttribute="leading" constant="50" id="PkY-6M-8Dk"/>
+                                <constraint firstAttribute="trailing" secondItem="dfr-Hh-1B6" secondAttribute="trailing" constant="50" id="Vae-UP-VVF"/>
+                                <constraint firstItem="dfr-Hh-1B6" firstAttribute="top" secondItem="kcP-0O-13V" secondAttribute="top" constant="20" id="XJp-pf-Ome"/>
+                                <constraint firstItem="vKP-7r-SLt" firstAttribute="leading" secondItem="kcP-0O-13V" secondAttribute="leading" constant="50" id="ZNi-80-CFP"/>
+                                <constraint firstAttribute="height" constant="227" id="iE9-XM-h8o"/>
+                                <constraint firstAttribute="bottom" secondItem="vKP-7r-SLt" secondAttribute="bottom" constant="19" id="mPu-xA-dNM"/>
+                                <constraint firstItem="GoL-qa-vXl" firstAttribute="top" secondItem="kcP-0O-13V" secondAttribute="top" constant="20" id="pTl-Qi-pND"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRt-LN-YQc" userLabel="hLine">
+                            <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="heW-8x-s7r"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="pRt-LN-YQc" firstAttribute="leading" secondItem="MXJ-1c-dWA" secondAttribute="leading" id="6bA-H6-drO"/>
+                        <constraint firstItem="0m5-9p-hY6" firstAttribute="top" secondItem="kcP-0O-13V" secondAttribute="bottom" id="8XF-pf-McJ"/>
+                        <constraint firstItem="0m5-9p-hY6" firstAttribute="leading" secondItem="MXJ-1c-dWA" secondAttribute="leading" id="Auy-oz-XOv"/>
+                        <constraint firstAttribute="bottom" secondItem="0m5-9p-hY6" secondAttribute="bottom" id="Nbf-ec-c8s"/>
+                        <constraint firstItem="kcP-0O-13V" firstAttribute="top" secondItem="MXJ-1c-dWA" secondAttribute="top" id="Pkm-5O-AzH"/>
+                        <constraint firstAttribute="height" constant="278" id="Qqd-6X-PRL"/>
+                        <constraint firstAttribute="trailing" secondItem="pRt-LN-YQc" secondAttribute="trailing" id="Wtu-Jo-wrt"/>
+                        <constraint firstAttribute="trailing" secondItem="0m5-9p-hY6" secondAttribute="trailing" id="fmw-KT-Xu6"/>
+                        <constraint firstItem="0m5-9p-hY6" firstAttribute="top" secondItem="pRt-LN-YQc" secondAttribute="bottom" constant="-1" id="tLg-v2-p4n"/>
+                        <constraint firstItem="kcP-0O-13V" firstAttribute="leading" secondItem="MXJ-1c-dWA" secondAttribute="leading" id="uwz-8H-32q"/>
+                        <constraint firstAttribute="bottom" secondItem="pRt-LN-YQc" secondAttribute="bottom" constant="50" id="vH7-ya-bmF"/>
+                        <constraint firstAttribute="bottom" secondItem="kcP-0O-13V" secondAttribute="bottom" constant="50" id="zgE-gb-Wjw"/>
+                        <constraint firstAttribute="trailing" secondItem="kcP-0O-13V" secondAttribute="trailing" id="zmD-gc-Fuh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Qqd-6X-PRL"/>
+                            <exclude reference="zgE-gb-Wjw"/>
+                            <exclude reference="vH7-ya-bmF"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-wt-zGk">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="hideSelf:" destination="-1" eventType="touchUpInside" id="gRb-Se-u3g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TeO-9E-PpM" secondAttribute="trailing" id="22u-mJ-7EK"/>
+                <constraint firstItem="QoQ-wt-zGk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GRX-d8-39f"/>
+                <constraint firstItem="MXJ-1c-dWA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pra-Kq-VeR"/>
+                <constraint firstAttribute="bottom" secondItem="TeO-9E-PpM" secondAttribute="bottom" id="SVi-El-e5g"/>
+                <constraint firstAttribute="trailing" secondItem="MXJ-1c-dWA" secondAttribute="trailing" id="fKz-oV-yyk"/>
+                <constraint firstItem="QoQ-wt-zGk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iG5-nA-hkJ"/>
+                <constraint firstAttribute="bottom" secondItem="MXJ-1c-dWA" secondAttribute="bottom" id="mxR-dW-Y0l"/>
+                <constraint firstItem="MXJ-1c-dWA" firstAttribute="top" secondItem="QoQ-wt-zGk" secondAttribute="bottom" id="tO5-mW-Ubq"/>
+                <constraint firstItem="TeO-9E-PpM" firstAttribute="top" secondItem="QoQ-wt-zGk" secondAttribute="bottom" id="w4O-Wr-Rdv"/>
+                <constraint firstItem="TeO-9E-PpM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yYx-Sn-mmb"/>
+                <constraint firstAttribute="trailing" secondItem="QoQ-wt-zGk" secondAttribute="trailing" id="yhe-XB-r9D"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_qZone" width="65" height="65"/>
+        <image name="share_qq" width="65" height="65"/>
+        <image name="share_wxSence" width="65" height="65"/>
+        <image name="share_wxTimeLine" width="65" height="65"/>
+    </resources>
+</document>

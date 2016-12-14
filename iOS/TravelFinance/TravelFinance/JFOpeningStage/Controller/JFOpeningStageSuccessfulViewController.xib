@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFOpeningStageSuccessfulViewController">
+            <connections>
+                <outlet property="auotaLabel" destination="Fdu-M6-D9T" id="hlk-SN-Y1s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_success" translatesAutoresizingMaskIntoConstraints="NO" id="IZ6-i5-bc8">
+                    <rect key="frame" x="113.5" y="40" width="148" height="180"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的额度为:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5US-To-9hz">
+                    <rect key="frame" x="109" y="262" width="97" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥6000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-M6-D9T">
+                    <rect key="frame" x="211" y="262" width="62.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTY-zF-1CY">
+                    <rect key="frame" x="152.5" y="318" width="70" height="30"/>
+                    <state key="normal" backgroundImage="openingstage_stages"/>
+                    <connections>
+                        <action selector="handleToStage:" destination="-1" eventType="touchUpInside" id="QJr-Vf-Xyg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IZ6-i5-bc8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="A9n-O1-36N"/>
+                <constraint firstItem="Fdu-M6-D9T" firstAttribute="leading" secondItem="5US-To-9hz" secondAttribute="trailing" constant="5" id="D8F-X9-0Ap"/>
+                <constraint firstItem="kTY-zF-1CY" firstAttribute="top" secondItem="Fdu-M6-D9T" secondAttribute="bottom" constant="34.5" id="RjQ-rD-Sau"/>
+                <constraint firstItem="Fdu-M6-D9T" firstAttribute="centerY" secondItem="5US-To-9hz" secondAttribute="centerY" id="cZx-OM-86t"/>
+                <constraint firstItem="5US-To-9hz" firstAttribute="top" secondItem="IZ6-i5-bc8" secondAttribute="bottom" constant="42" id="h5p-xi-bgH"/>
+                <constraint firstItem="5US-To-9hz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-30" id="jDc-WR-5wC"/>
+                <constraint firstItem="kTY-zF-1CY" firstAttribute="centerX" secondItem="IZ6-i5-bc8" secondAttribute="centerX" id="vKP-qE-zKT"/>
+                <constraint firstItem="IZ6-i5-bc8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x7p-Qf-OKP"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="openingstage_stages" width="70" height="30"/>
+        <image name="openingstage_success" width="148" height="180"/>
+    </resources>
+</document>

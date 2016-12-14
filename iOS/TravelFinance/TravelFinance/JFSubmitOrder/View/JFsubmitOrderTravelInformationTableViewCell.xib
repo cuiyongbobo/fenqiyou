@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JFsubmitOrderTravelInformationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-vd-rli">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完善本人出行信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-SK-vJP">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_goforward" translatesAutoresizingMaskIntoConstraints="NO" id="d09-Vg-Rh1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3个" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypj-Mb-f4o">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OTO-fo-aaU">
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kuj-P7-oSP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JGf-SK-vJP" firstAttribute="leading" secondItem="Mxh-vd-rli" secondAttribute="leading" constant="15" id="LeK-z3-t8n"/>
+                            <constraint firstAttribute="bottom" secondItem="OTO-fo-aaU" secondAttribute="bottom" id="P3F-EH-v19"/>
+                            <constraint firstAttribute="trailing" secondItem="d09-Vg-Rh1" secondAttribute="trailing" constant="15" id="VSJ-yT-kN9"/>
+                            <constraint firstItem="d09-Vg-Rh1" firstAttribute="leading" secondItem="Ypj-Mb-f4o" secondAttribute="trailing" constant="10" id="XkC-aD-uAJ"/>
+                            <constraint firstItem="OTO-fo-aaU" firstAttribute="leading" secondItem="Mxh-vd-rli" secondAttribute="leading" id="b1H-QH-GJD"/>
+                            <constraint firstItem="Ypj-Mb-f4o" firstAttribute="centerY" secondItem="Mxh-vd-rli" secondAttribute="centerY" id="hBQ-ly-xG5"/>
+                            <constraint firstAttribute="trailing" secondItem="OTO-fo-aaU" secondAttribute="trailing" id="hyf-JD-7SK"/>
+                            <constraint firstItem="JGf-SK-vJP" firstAttribute="centerY" secondItem="Mxh-vd-rli" secondAttribute="centerY" id="mdv-vq-wU1"/>
+                            <constraint firstItem="d09-Vg-Rh1" firstAttribute="centerY" secondItem="Mxh-vd-rli" secondAttribute="centerY" id="nCa-eR-CTj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mxh-vd-rli" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7cH-vQ-sKl"/>
+                    <constraint firstItem="Mxh-vd-rli" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hl5-Cn-lhI"/>
+                    <constraint firstItem="Mxh-vd-rli" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" id="nlk-6N-JCL"/>
+                    <constraint firstAttribute="trailing" secondItem="Mxh-vd-rli" secondAttribute="trailing" id="qEX-ch-0hg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="TravelPersonLabel" destination="JGf-SK-vJP" id="53H-vs-Q4f"/>
+                <outlet property="submitBottomImageView" destination="OTO-fo-aaU" id="QDm-XH-wPl"/>
+                <outlet property="submitCountLabel" destination="Ypj-Mb-f4o" id="A4P-ce-Tv7"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="10"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_goforward" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="KGk-i7-Jjw" customClass="JFstagingTourRecommendedListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="351" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHo-xa-pTU">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stagingtour_stagesselecteddefault" translatesAutoresizingMaskIntoConstraints="NO" id="hl0-T4-4QI">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hl0-T4-4QI" secondAttribute="height" multiplier="99:70" id="6Yl-57-JyR"/>
+                                    <constraint firstAttribute="width" constant="99.5" id="Tpc-ne-Vju"/>
+                                    <constraint firstAttribute="height" constant="70" id="uJa-Su-hWw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马大夫美人蕉岛|美佳直飞" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-1F-mBC">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浪漫海岛|跟团出行|分期支付" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPt-vu-ZFD">
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥210" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-80-wp6">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.95294117647058818" green="0.027450980392156862" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stagingtour_ freeLabel" translatesAutoresizingMaskIntoConstraints="NO" id="3uH-Yj-xjf"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi2-zI-vyT">
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.95294117647058818" green="0.027450980392156862" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stagingtour_citybackground" translatesAutoresizingMaskIntoConstraints="NO" id="8Uo-69-0bK"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京出发" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-0V-gTk">
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stagingtour_ freeLabel" translatesAutoresizingMaskIntoConstraints="NO" id="nus-BF-xk0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-zY-zAX">
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.95294117647058818" green="0.027450980392156862" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJH-cc-IQr">
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="K1H-GL-NNm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3uH-Yj-xjf" firstAttribute="trailing" secondItem="TPt-vu-ZFD" secondAttribute="trailing" id="1Ym-j8-N1a"/>
+                            <constraint firstItem="TPt-vu-ZFD" firstAttribute="leading" secondItem="4pb-1F-mBC" secondAttribute="leading" id="6B3-ea-YXG"/>
+                            <constraint firstAttribute="bottom" secondItem="pJH-cc-IQr" secondAttribute="bottom" id="Bvc-zM-Shq"/>
+                            <constraint firstItem="xd8-80-wp6" firstAttribute="leading" secondItem="TPt-vu-ZFD" secondAttribute="leading" id="FbR-Qo-gU2"/>
+                            <constraint firstItem="nus-BF-xk0" firstAttribute="centerY" secondItem="xd8-80-wp6" secondAttribute="centerY" id="HfF-kb-ytm"/>
+                            <constraint firstItem="hl0-T4-4QI" firstAttribute="top" secondItem="EHo-xa-pTU" secondAttribute="top" constant="16" id="Kck-OF-qug"/>
+                            <constraint firstItem="hl0-T4-4QI" firstAttribute="leading" secondItem="pJH-cc-IQr" secondAttribute="leading" id="KuX-wH-K5v"/>
+                            <constraint firstItem="MDq-zY-zAX" firstAttribute="centerY" secondItem="nus-BF-xk0" secondAttribute="centerY" id="LeK-7K-5PT"/>
+                            <constraint firstItem="3uH-Yj-xjf" firstAttribute="leading" secondItem="nus-BF-xk0" secondAttribute="trailing" constant="10" id="MJS-Ne-eNK"/>
+                            <constraint firstItem="oi2-zI-vyT" firstAttribute="centerX" secondItem="3uH-Yj-xjf" secondAttribute="centerX" id="NsB-IA-ZkO"/>
+                            <constraint firstItem="TPt-vu-ZFD" firstAttribute="trailing" secondItem="4pb-1F-mBC" secondAttribute="trailing" id="PDe-7X-IOY"/>
+                            <constraint firstItem="4pb-1F-mBC" firstAttribute="trailing" secondItem="pJH-cc-IQr" secondAttribute="trailing" id="SXr-Wu-nzD"/>
+                            <constraint firstItem="pJH-cc-IQr" firstAttribute="leading" secondItem="EHo-xa-pTU" secondAttribute="leading" constant="15" id="Sf3-Ip-HDw"/>
+                            <constraint firstItem="8Uo-69-0bK" firstAttribute="leading" secondItem="hl0-T4-4QI" secondAttribute="leading" id="TKF-Ai-eMm"/>
+                            <constraint firstItem="oi2-zI-vyT" firstAttribute="centerY" secondItem="3uH-Yj-xjf" secondAttribute="centerY" id="Tkw-kX-Rtj"/>
+                            <constraint firstItem="MDq-zY-zAX" firstAttribute="centerX" secondItem="nus-BF-xk0" secondAttribute="centerX" id="UDc-Of-Ipm"/>
+                            <constraint firstItem="8Uo-69-0bK" firstAttribute="top" secondItem="hl0-T4-4QI" secondAttribute="top" id="ckj-Fw-IM5"/>
+                            <constraint firstItem="3uH-Yj-xjf" firstAttribute="centerY" secondItem="xd8-80-wp6" secondAttribute="centerY" id="fEB-ua-eb0"/>
+                            <constraint firstItem="TPt-vu-ZFD" firstAttribute="top" secondItem="4pb-1F-mBC" secondAttribute="bottom" constant="7" id="i7C-bi-ZCg"/>
+                            <constraint firstAttribute="bottom" secondItem="xd8-80-wp6" secondAttribute="bottom" constant="10" id="k1O-qD-jd8"/>
+                            <constraint firstItem="6Za-0V-gTk" firstAttribute="centerX" secondItem="8Uo-69-0bK" secondAttribute="centerX" id="niO-ei-d61"/>
+                            <constraint firstItem="6Za-0V-gTk" firstAttribute="centerY" secondItem="8Uo-69-0bK" secondAttribute="centerY" id="oAC-FI-eyO"/>
+                            <constraint firstAttribute="trailing" secondItem="pJH-cc-IQr" secondAttribute="trailing" constant="15" id="tWT-4M-T9s"/>
+                            <constraint firstItem="4pb-1F-mBC" firstAttribute="top" secondItem="hl0-T4-4QI" secondAttribute="top" id="uyW-zd-0RG"/>
+                            <constraint firstItem="4pb-1F-mBC" firstAttribute="leading" secondItem="hl0-T4-4QI" secondAttribute="trailing" constant="13" id="yrd-7K-het"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EHo-xa-pTU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="94i-35-sSt"/>
+                    <constraint firstItem="EHo-xa-pTU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CtY-fe-fFd"/>
+                    <constraint firstAttribute="bottom" secondItem="EHo-xa-pTU" secondAttribute="bottom" id="aTS-XI-JoU"/>
+                    <constraint firstAttribute="trailing" secondItem="EHo-xa-pTU" secondAttribute="trailing" id="pTe-LE-5ta"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bystagesDefFqAmountabel" destination="xd8-80-wp6" id="CbI-gp-msJ"/>
+                <outlet property="bystagesDetailsView" destination="EHo-xa-pTU" id="LWC-nm-YsE"/>
+                <outlet property="bystagesImageLogoImageView" destination="hl0-T4-4QI" id="dWc-oh-XEZ"/>
+                <outlet property="bystagesLevelNameLabel" destination="TPt-vu-ZFD" id="SEr-dq-6Nk"/>
+                <outlet property="bystagesPushNameLabel" destination="4pb-1F-mBC" id="CxK-9F-Sum"/>
+                <outlet property="bytagesBottomLineImageView" destination="pJH-cc-IQr" id="lLc-52-bFm"/>
+                <outlet property="bytagesFromCityImageView" destination="8Uo-69-0bK" id="yfG-Oc-7id"/>
+                <outlet property="bytagesIsFreeLabel" destination="oi2-zI-vyT" id="11H-7v-sAT"/>
+                <outlet property="bytagesTagSecondImageView" destination="nus-BF-xk0" id="CMS-7q-yNN"/>
+                <outlet property="bytagesTagSecondLabel" destination="MDq-zY-zAX" id="bHY-hJ-a3e"/>
+                <outlet property="fromCityLabel" destination="6Za-0V-gTk" id="qdZ-Ce-PKd"/>
+                <outlet property="stagingtourOneTagImageView" destination="3uH-Yj-xjf" id="WTV-en-Ezp"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="47.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="stagingtour_ freeLabel" width="35" height="15"/>
+        <image name="stagingtour_citybackground" width="45" height="15"/>
+        <image name="stagingtour_stagesselecteddefault" width="100" height="70"/>
+    </resources>
+</document>
