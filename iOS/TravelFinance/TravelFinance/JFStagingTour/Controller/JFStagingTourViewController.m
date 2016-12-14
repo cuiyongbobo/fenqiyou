@@ -304,6 +304,7 @@
 
 
 - (void)handlestagingTourResponse:(NSDictionary *)dictionary {
+
     NSLog(@"dic =%@",dictionary);
     JFStagingTourParser *stagingTourParser = [JFStagingTourParser sharedStagingTourParser];
     stagingTourParser.sourceData = dictionary;

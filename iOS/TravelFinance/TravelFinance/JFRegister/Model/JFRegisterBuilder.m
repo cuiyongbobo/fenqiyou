@@ -11,7 +11,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 #import "NSMutableDictionary+HexDict.h"
-#import "MD5Util.h"
+#import "JFMD5Util.h"
 
 static NSString *const KJFRegisterRequestURL = @"/user/register";
 
@@ -33,7 +33,7 @@ static NSString *const KJFRegisterRequestURL = @"/user/register";
     [paramDict setAllObject:JFKTerminalType forKey:@"terminalType"];
     [paramDict setAllObject:[JFBaseLibCommon appVersion] forKey:@"requestVersion"];
     [paramDict setAllObject:phoneNumber forKey:@"mobile"];
-    [paramDict setAllObject:[MD5Util md532BitUpper:password] forKey:@"loginPwd"];
+    [paramDict setAllObject:[JFMD5Util md532BitUpper:password] forKey:@"loginPwd"];
     [paramDict setAllObject:verificationCode forKey:@"checkNo"];
     self.postData = paramDict;
     self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJFRegisterRequestURL];

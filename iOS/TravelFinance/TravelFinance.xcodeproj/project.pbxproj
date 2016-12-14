@@ -844,7 +844,7 @@
 		D7A7453C1DE2C74900835596 /* JFResetLoginPasswordParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFResetLoginPasswordParser.m; sourceTree = "<group>"; };
 		D7A7453F1DE30CB000835596 /* YKNewToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKNewToastView.h; sourceTree = "<group>"; };
 		D7A745401DE30CB000835596 /* YKNewToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKNewToastView.m; sourceTree = "<group>"; };
-		D7B404BD1DDC061C00A6C30B /* MD5Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Util.h; sourceTree = "<group>"; };
+		D7B404BD1DDC061C00A6C30B /* JFMD5Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMD5Util.h; sourceTree = "<group>"; };
 		D7B404BE1DDC061C00A6C30B /* MD5Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Util.m; sourceTree = "<group>"; };
 		D7B404C41DDC66E100A6C30B /* JFOpeningStageRealNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFOpeningStageRealNameViewController.h; sourceTree = "<group>"; };
 		D7B404C51DDC66E100A6C30B /* JFOpeningStageRealNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFOpeningStageRealNameViewController.m; sourceTree = "<group>"; };
@@ -1773,7 +1773,7 @@
 		D7B404BC1DDC061C00A6C30B /* MD5 */ = {
 			isa = PBXGroup;
 			children = (
-				D7B404BD1DDC061C00A6C30B /* MD5Util.h */,
+				D7B404BD1DDC061C00A6C30B /* JFMD5Util.h */,
 				D7B404BE1DDC061C00A6C30B /* MD5Util.m */,
 			);
 			path = MD5;

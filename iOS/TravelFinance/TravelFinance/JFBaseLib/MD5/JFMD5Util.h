@@ -10,7 +10,7 @@
 #import <CommonCrypto/CommonDigest.h> 
 
 //md5 加密
-@interface MD5Util : NSObject {
+@interface JFMD5Util : NSObject {
 
 }
 

@@ -762,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "503372980.406126"
+            timestampString = "503395629.029054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "640"
-            endingLineNumber = "640"
+            startingLineNumber = "641"
+            endingLineNumber = "641"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -874,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "503372980.406126"
+            timestampString = "503395629.029054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "604"
-            endingLineNumber = "604"
+            startingLineNumber = "605"
+            endingLineNumber = "605"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>

@@ -6,10 +6,10 @@
 //  Copyright 2011 EmatChina. All rights reserved.
 //
 
-#import "MD5Util.h"
+#import "JFMD5Util.h"
 
 
-@implementation MD5Util
+@implementation JFMD5Util
 
 //md5 加密字符串
 //+ (NSString *) md5:(NSString *)str {
@@ -81,7 +81,7 @@
     
     NSData * data = [NSData dataWithContentsOfFile:file];
     
-    return [MD5Util md5ForData:data];
+    return [JFMD5Util md5ForData:data];
 }
 
 //md5 加密data

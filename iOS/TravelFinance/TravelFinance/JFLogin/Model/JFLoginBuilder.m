@@ -11,7 +11,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 #import "NSMutableDictionary+HexDict.h"
-#import "MD5Util.h"
+#import "JFMD5Util.h"
 
 static NSString *const KJFLoginRequestURL = @"/user/login";
 
@@ -32,7 +32,7 @@ static NSString *const KJFLoginRequestURL = @"/user/login";
     NSMutableDictionary *paramDict=[[NSMutableDictionary alloc]initWithCapacity:10];
     [paramDict setAllObject:JFKTerminalType forKey:@"terminalType"];
     [paramDict setAllObject:[JFBaseLibCommon appVersion] forKey:@"requestVersion"];
-    [paramDict setAllObject:[MD5Util md532BitUpper:password] forKey:@"loginPwd"];
+    [paramDict setAllObject:[JFMD5Util md532BitUpper:password] forKey:@"loginPwd"];
     [paramDict setAllObject:phoneNumber forKey:@"mobile"];
     self.postData = paramDict;
     self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJFLoginRequestURL];

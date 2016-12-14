@@ -11,7 +11,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 #import "NSMutableDictionary+HexDict.h"
-#import "MD5Util.h"
+#import "JFMD5Util.h"
 
 static NSString *const KJResetLoginPasswordRequestURL = @"/user/resetLoginPwd";
 
@@ -35,7 +35,7 @@ static NSString *const KJResetLoginPasswordRequestURL = @"/user/resetLoginPwd";
     [paramDict setAllObject:userId forKey:@"userId"];
     [paramDict setAllObject:mobile forKey:@"mobile"];
     [paramDict setAllObject:checkNo forKey:@"checkNo"];
-    [paramDict setAllObject:[MD5Util md532BitUpper:newLoginPwd] forKey:@"newLoginPwd"];
+    [paramDict setAllObject:[JFMD5Util md532BitUpper:newLoginPwd] forKey:@"newLoginPwd"];
     self.postData = paramDict;
     self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJResetLoginPasswordRequestURL];
 }
