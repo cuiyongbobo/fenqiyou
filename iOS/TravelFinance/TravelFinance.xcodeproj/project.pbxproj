@@ -3240,7 +3240,7 @@
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjiu.travelfinance.develop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3d68aa3-8347-48eb-bdba-79422e147dd0";
+				PROVISIONING_PROFILE = "95f24a9e-9389-4d43-8e32-ee119c7a73b0";
 				PROVISIONING_PROFILE_SPECIFIER = TravelFinanceDevelop;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -3280,7 +3280,7 @@
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjiu.travelfinance.develop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3d68aa3-8347-48eb-bdba-79422e147dd0";
+				PROVISIONING_PROFILE = "95f24a9e-9389-4d43-8e32-ee119c7a73b0";
 				PROVISIONING_PROFILE_SPECIFIER = TravelFinanceDevelop;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";

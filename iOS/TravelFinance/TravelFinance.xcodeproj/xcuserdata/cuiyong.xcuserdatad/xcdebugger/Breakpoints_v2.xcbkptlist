@@ -41,8 +41,8 @@
                   symbolName = "-[JFstagingTourplayFreeTtemCodeView init]"
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyong/Documents/%E4%BA%8B%E4%B8%9A%E9%83%A8/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503381700.510136"
+                  urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
+                  timestampString = "503397662.214598"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -56,8 +56,8 @@
                   symbolName = "__41-[JFstagingTourplayFreeTtemCodeView init]_block_invoke"
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cuiyong/Documents/%E4%BA%8B%E4%B8%9A%E9%83%A8/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503381700.511551"
+                  urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
+                  timestampString = "503397662.216822"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -858,11 +858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFLineList/Controller/JFPublicLineListViewController.m"
-            timestampString = "502967682.930777"
+            timestampString = "503397661.020183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-loadNetworkRequest"
             landmarkType = "7">
          </BreakpointContent>
@@ -1040,6 +1040,38 @@
             startingLineNumber = "330"
             endingLineNumber = "330"
             landmarkName = "-handleBindingResponse:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseLib/JFWebView/JFWKWebViewController.m"
+            timestampString = "503398539.476172"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "-webView:didReceiveServerRedirectForProvisionalNavigation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseLib/JFWebView/JFWKWebViewController.m"
+            timestampString = "503398539.476172"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-webView:didFinishNavigation:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

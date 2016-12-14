@@ -68,7 +68,6 @@
     }
 }
 
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.stagingTourSelectItemArrayList = [[NSMutableArray alloc] init];
@@ -111,7 +110,6 @@
         [[JFNetworkAFN sharedNetwork] requestHttpDataWithPath:specialBuilder.requestURL params:specialBuilder.postData withMethodType:HttpRequestTypePost cacheSupport:NO delegate:self];
         [JFNetworkAFN sharedNetwork].connectionType = JFConnectionTypeLineListBW;
     }
-    
 }
 
 #pragma mark response Event
@@ -218,7 +216,6 @@
             webViewController.navigationItem.hidesBackButton = YES;
             [self.navigationController pushViewController:webViewController animated:YES];
         }
-        
     }
 }
 

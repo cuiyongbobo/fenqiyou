@@ -67,30 +67,25 @@
     YKToastView *toastView = [YKToastView sharedToastViewWWithIndicatorAndText:@"努力加载.."];
     [toastView showInView:self.view];
     
-    
 }
 
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
     
     [[YKToastView sharedToastView] hide];
-    
 }
 
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation { // 类似 UIWebView 的 －webViewDidFinishLoad:
     
     [[YKToastView sharedToastView] hide];
-    
     self.titleName =webView.title;
-    
-    
     if (self.isShowNavigation) {
         [self.navigationController.navigationBar setHidden:NO];
         
         if (self.isNotShowCloseBtn) {
-            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+            [self configNavigation:webView.title showRightBtn:NO showLeftBtn:NO currentController:self];
         }else {
-            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+            [self configNavigation:webView.title showRightBtn:NO showLeftBtn:YES currentController:self];
         }
         
     }else {
@@ -158,8 +153,7 @@
 
 //接收到服务器 跳转请求之后调用，即从一个h5 进入另一个h5
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation {
-    
-    
+    self.titleName = nil;
     // decisionHandler(WKNavigationActionPolicyAllow);
 }
 
