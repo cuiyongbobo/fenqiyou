@@ -16,6 +16,7 @@
 #import "JFColor.h"
 #import "YKToastView.h"
 #import "JFNavigationController.h"
+#import "JFString.h"
 
 @interface JFWKWebViewController ()<WKNavigationDelegate>
 
@@ -78,7 +79,12 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation { // 类似 UIWebView 的 －webViewDidFinishLoad:
     
     [[YKToastView sharedToastView] hide];
-    self.titleName =webView.title;
+    if (![JFString judgeString:self.titleName]) {
+        self.titleName = @"";
+        self.titleName =webView.title;
+    }else {
+        self.titleName =webView.title;
+    }
     if (self.isShowNavigation) {
         [self.navigationController.navigationBar setHidden:NO];
         
