@@ -515,7 +515,7 @@
     switch (indexPath.section) {
         case 0:
         {
-            return 195.5;
+            return 195*JFHeightRateScale;
         }
             break;
         case 1:

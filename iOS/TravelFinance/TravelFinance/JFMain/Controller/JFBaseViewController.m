@@ -40,7 +40,7 @@
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     _TitleImage=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 30)];
-    _TitleImage.image=[UIImage imageNamed:@""];
+    //    _TitleImage.image=[UIImage imageNamed:@""];
     controller.navigationItem.titleView=_TitleImage;
     companyAccount=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, _TitleImage.frame.size.width, 20)];
     companyAccount.text=navigationTitile;
@@ -110,7 +110,7 @@
                 internetAvailable = NO;
                 break;
             }
-              
+                
             case AFNetworkReachabilityStatusReachableViaWiFi: {
                 //                [weakSelf loadMessage:@"Wifi已开启"];
                 NSLog(@"Wifi已开启");

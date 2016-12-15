@@ -18,16 +18,13 @@
     self.submitOrderInformatonView.layer.masksToBounds = YES;
 }
 
-
 - (void)bindeDataWithViewModel:(NSDictionary *) viewModel {
      self.submitOrderTitleLabel.text = viewModel[@"orderTitle"];
      self.submitOrderlineAmountLabel.text = [NSString stringWithFormat:@"￥%@",viewModel[@"lineAmount"]];
      self.submitOrderlineTravelTimeLabel.text = viewModel[@"travelTime"];
-     self.submitOrderlineTravelNumberLabel.text = viewModel[@"travelNumber"];
+     self.submitOrderlineTravelNumberLabel.text = [NSString stringWithFormat:@"%@人",viewModel[@"travelNumber"]];
      self.submitOrderSingleDifferenceLabel.text = [NSString stringWithFormat:@"￥%@",viewModel[@"singleDifference"]];
 }
-
-
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -96,7 +96,7 @@
 {
     [self.navigationController.navigationBar setHidden:NO];
     _TitleImage=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 30)];
-    _TitleImage.image=[UIImage imageNamed:@""];
+//    _TitleImage.image=[UIImage imageNamed:NULL];
     self.navigationItem.titleView=_TitleImage;
     companyAccount=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, _TitleImage.frame.size.width, 20)];
     companyAccount.text=@"设置手势密码";

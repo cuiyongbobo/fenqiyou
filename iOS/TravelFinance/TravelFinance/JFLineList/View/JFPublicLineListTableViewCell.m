@@ -25,7 +25,7 @@
 
 - (void)bindeDataWithViewModel:(JFStagingTourfqGoodsItem *) viewModel {
     
-    [self.bystagesImageLogoImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.imageLogo] placeholderImage:[UIImage imageNamed:@""]];
+    [self.bystagesImageLogoImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.imageLogo] placeholderImage:[UIImage imageNamed:@"stagingtour_lineListnormal"]];
     self.lineListTitleLabel.text = viewModel.pushName;
     self.lineListSubtitleLabel.text = viewModel.levelName;
     self.goCityLabel.text = [NSString stringWithFormat:@"%@出发",viewModel.fromcity];

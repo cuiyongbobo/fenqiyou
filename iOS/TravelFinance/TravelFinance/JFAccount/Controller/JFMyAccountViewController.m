@@ -239,7 +239,6 @@
         _totalAmountArray = [[NSMutableArray alloc] init];
         _expireAmountArray = [[NSMutableArray alloc] init];
         
-        NSLog(@"repayment %@",self.personalCenterItem.repayment);
         // section2
         [_availableCreditAmountArray addObject:@""];
         // 逾期还款
@@ -746,8 +745,10 @@
                     
                     cell.overdueRepaymentTitleLabel.text = _availableCreditArray[indexPath.row];
                     cell.monthlyRepaymentTitleLabel.text = _availableCreditSecondArray[indexPath.row];
-                    cell.overdueRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_availableCreditLogoArray[indexPath.row]]];
-                    cell.monthlyRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_availableCreditSecondLogoArray[indexPath.row]]];
+                    if (indexPath.row >0) {
+                        cell.overdueRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_availableCreditLogoArray[indexPath.row]]];
+                        cell.monthlyRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_availableCreditSecondLogoArray[indexPath.row]]];
+                    }
                     
                     if (_availableCreditAmountArray.count > indexPath.row) {
                         cell.overdueRepaymentLabel.text = _availableCreditAmountArray[indexPath.row];
@@ -794,10 +795,14 @@
                 if (_totalAssetsArray.count >0) {
                     
                     cell.overdueRepaymentTitleLabel.text = _totalAssetsArray[indexPath.row];
-                    cell.overdueRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_totalAssetsLogoArray[indexPath.row]]];
-                    
-                    cell.monthlyRepaymentTitleLabel.text = _totalAssetsSecondArray[indexPath.row];
-                    cell.monthlyRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_totalAssetsSecondLogoArray[indexPath.row]]];
+                    if (indexPath.row >0) {
+                        cell.overdueRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_totalAssetsLogoArray[indexPath.row]]];
+                        
+                        cell.monthlyRepaymentTitleLabel.text = _totalAssetsSecondArray[indexPath.row];
+                    }
+                    if (indexPath.row == 1) {
+                        cell.monthlyRepaymentImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",_totalAssetsSecondLogoArray[indexPath.row]]];
+                    }
                     
                     if (_totalAmountArray.count > indexPath.row) {
                         cell.overdueRepaymentLabel.text = _totalAmountArray[indexPath.row];

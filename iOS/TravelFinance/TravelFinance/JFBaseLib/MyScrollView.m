@@ -11,6 +11,7 @@
 #import "JFstagingTourplayFreeTtemView.h"
 #import "JFStagingTourlistBwItem.h"
 #import "UIImageView+WebCache.h"
+#import "JFMacro.h"
 
 
 #define SPACE 5

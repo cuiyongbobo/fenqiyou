@@ -30,7 +30,7 @@
 
 - (void)bindeDataWithViewModel:(JFStagingTourfqGoodsItem *) viewModel {
     
-    [self.bystagesImageLogoImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.imageLogo] placeholderImage:[UIImage imageNamed:@""]];
+    [self.bystagesImageLogoImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.imageLogo] placeholderImage:[UIImage imageNamed:@"stagingtour_stagesselecteddefault"]];
     self.bystagesPushNameLabel.text = viewModel.pushName;
     self.bystagesLevelNameLabel.text = viewModel.levelName;
     self.bystagesDefFqAmountabel.text = [NSString stringWithFormat:@"%@",viewModel.defFqAmount];

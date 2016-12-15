@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="509" height="264"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCN-Gk-lXR">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCN-Gk-lXR">
                         <rect key="frame" x="0.0" y="195" width="509" height="69.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpa-rq-kxH">

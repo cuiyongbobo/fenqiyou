@@ -48,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="《借款服务"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本人已阅读并且同意" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-Nz-a8u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本人已阅读并同意" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-Nz-a8u">
                                 <rect key="frame" x="15" y="10" width="111" height="14.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="du6-Id-Tn1"/>
@@ -96,7 +96,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNU-aV-rz1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
                         <subviews>
                             <button opaque="NO" multipleTouchEnabled="YES" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGY-Jv-7RL">
                                 <rect key="frame" x="126" y="4" width="123" height="27"/>

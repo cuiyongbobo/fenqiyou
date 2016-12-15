@@ -55,18 +55,18 @@
             //            [self.specialItemArray addObject:obj];
             self.specialTitleLabel.text = obj.name;
             self.specialSubtitleLabel.text = obj.pushTitle;
-            [self.specialOneLogoImageView sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@""]];
+            [self.specialOneLogoImageView sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@"stagingtour_specialOneLogo"]];
         }else if([obj.orders integerValue] == 2){
             //            [self.specialItemArray addObject:obj];
             self.specialSecondTitleLabel.text = obj.name;
             self.specialSecondSubtitleLabel.text = obj.pushTitle;
-            [self.specialSecondLogoImageView sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@""]];
+            [self.specialSecondLogoImageView sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@"stagingtour_specialSecondLogo"]];
             
         }else if ([obj.orders integerValue] == 3){
             //            [self.specialItemArray addObject:obj];
             self.specialThirdTitleLabel.text = obj.name;
             self.specialThirdSubtitleLabel.text = obj.pushTitle;
-            [self.stagingtour_specialThirdLogo sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@""]];
+            [self.stagingtour_specialThirdLogo sd_setImageWithURL:[NSURL URLWithString:obj.imgPath] placeholderImage:[UIImage imageNamed:@"stagingtour_specialThirdLogo"]];
         }
         
     }];

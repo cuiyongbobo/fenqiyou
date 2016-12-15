@@ -41,7 +41,6 @@
 
 @interface JFSubmitOrderViewController ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,JFURLConnectionDelegate,backPersonInformationdelegate,JFBaseTableViewCellDelegate>
 
-//@property (weak, nonatomic) IBOutlet UILabel *submitPaymentLabel;
 @property (weak, nonatomic) IBOutlet UITableView *submitOrderTableView;
 @property (nonatomic, strong) UITextField *submitOrderPhoneText;
 @property (nonatomic, strong) NSMutableArray *MyselfArray;
