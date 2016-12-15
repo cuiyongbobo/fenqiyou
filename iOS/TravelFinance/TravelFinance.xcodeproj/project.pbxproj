@@ -35,6 +35,7 @@
 		D7106BEB1DDF1970008D9DF1 /* JFTravelOrdersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7106BEA1DDF1970008D9DF1 /* JFTravelOrdersBuilder.m */; };
 		D7106BEE1DDF1A58008D9DF1 /* JFTravelOrdersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D7106BED1DDF1A58008D9DF1 /* JFTravelOrdersParser.m */; };
 		D7106BF11DDF1E4C008D9DF1 /* JFTravelOrdersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7106BF01DDF1E4C008D9DF1 /* JFTravelOrdersItem.m */; };
+		D712277B1E014E4C00E24C71 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D712277A1E014E4C00E24C71 /* MyScrollView.m */; };
 		D7140B8A1DD41B99000D4A63 /* JFSubmitOrderParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D7140B891DD41B99000D4A63 /* JFSubmitOrderParser.m */; };
 		D7140B911DD42306000D4A63 /* JFCreditPersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7140B901DD42306000D4A63 /* JFCreditPersonItem.m */; };
 		D7140B941DD452FB000D4A63 /* JFTravelPersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7140B931DD452FB000D4A63 /* JFTravelPersonBuilder.m */; };
@@ -454,6 +455,8 @@
 		D7106BED1DDF1A58008D9DF1 /* JFTravelOrdersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTravelOrdersParser.m; sourceTree = "<group>"; };
 		D7106BEF1DDF1E4C008D9DF1 /* JFTravelOrdersItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTravelOrdersItem.h; sourceTree = "<group>"; };
 		D7106BF01DDF1E4C008D9DF1 /* JFTravelOrdersItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTravelOrdersItem.m; sourceTree = "<group>"; };
+		D71227791E014E4C00E24C71 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		D712277A1E014E4C00E24C71 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 		D7140B881DD41B99000D4A63 /* JFSubmitOrderParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSubmitOrderParser.h; sourceTree = "<group>"; };
 		D7140B891DD41B99000D4A63 /* JFSubmitOrderParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSubmitOrderParser.m; sourceTree = "<group>"; };
 		D7140B8F1DD42306000D4A63 /* JFCreditPersonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCreditPersonItem.h; sourceTree = "<group>"; };
@@ -2022,6 +2025,8 @@
 				D792E7F31DF981A600F6A493 /* YKReachabilityMgr.m */,
 				D792E7F51DF9825200F6A493 /* YKReachability.h */,
 				D792E7F61DF9825200F6A493 /* YKReachability.m */,
+				D71227791E014E4C00E24C71 /* MyScrollView.h */,
+				D712277A1E014E4C00E24C71 /* MyScrollView.m */,
 			);
 			path = JFBaseLib;
 			sourceTree = "<group>";
@@ -2978,6 +2983,7 @@
 				D7B404CC1DDC730700A6C30B /* JFOpeningStageBindingBankCardViewController.m in Sources */,
 				D7066FC51DC34AF900ED7BBA /* NSMutableDictionary+HexDict.m in Sources */,
 				D7B4D5C31DC64290006DA69B /* SDWebImageDownloader.m in Sources */,
+				D712277B1E014E4C00E24C71 /* MyScrollView.m in Sources */,
 				D77EBF421DCC53C4003294B4 /* MASViewConstraint.m in Sources */,
 				D751D5B61DED88FC00147EC3 /* MJRefreshConst.m in Sources */,
 				D7B404E01DDC8C2800A6C30B /* JFOpeningStageFailViewController.m in Sources */,
