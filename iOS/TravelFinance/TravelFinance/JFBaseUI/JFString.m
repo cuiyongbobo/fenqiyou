@@ -130,7 +130,7 @@ static NSNumberFormatter *sharedDoubleNumberFormatter = nil;
     }
     
     NSNumber *doubleNumber =  [NSNumber numberWithDouble:number];
-    NSString *numString = [NSString stringWithFormat:@"%ld",[doubleNumber integerValue]];
+    NSString *numString = [NSString stringWithFormat:@"%ld",(long)[doubleNumber integerValue]];
     
     if (numString.length < 3) {
         return numString;

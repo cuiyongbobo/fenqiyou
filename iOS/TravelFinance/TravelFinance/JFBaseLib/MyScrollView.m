@@ -135,7 +135,7 @@
 
 - (void)handleTapGR:(UIPanGestureRecognizer *)tap {
     
-    NSLog(@"****%ld",tap.view.tag-1000-1);
+    NSLog(@"****%ld",(long)(tap.view.tag-1000-1));
     if ([self.freePlayDelegate respondsToSelector:@selector(didSelectBannerView:)]) {
         [self.freePlayDelegate didSelectBannerView:tap.view.tag-1000-1];
     }

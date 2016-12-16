@@ -30,6 +30,8 @@
     
     [self.view addSubview:self.webView];
     
+    self.requestUrl = _requestUrl;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -49,7 +51,6 @@
         [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
     }
     
-    self.requestUrl = _requestUrl;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

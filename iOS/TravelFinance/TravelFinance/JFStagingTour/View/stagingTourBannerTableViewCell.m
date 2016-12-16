@@ -30,8 +30,6 @@
     _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, [JFDevice screenWidth], 195*JFHeightRateScale) delegate:self placeholderImage:[UIImage imageNamed:@"stagingtour_bannerdefault"]];
     [self addSubview:self.cycleScrollView];
     
-    //    [self.routeView setHidden:YES];
-//    self.bannerHeight.constant = 195*JFHeightRateScale;
 }
 
 - (IBAction)integralClickFunc:(id)sender {

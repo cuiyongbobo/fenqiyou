@@ -123,14 +123,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"indexPath.row =%ld",indexPath.row);
+    NSLog(@"indexPath.row =%ld",(long)indexPath.row);
     switch (indexPath.row) {
         case 0:
         {
             [MobClick event:@"mycenter_banner1"];//个人中心未登录页面banner1点击数
             
             JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
-            NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",indexPath.row+1];
+            NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
             
             payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
             payWebController.htmlSubmit =NO;
@@ -144,7 +144,7 @@
             [MobClick event:@"mycenter_banner2"];//个人中心未登录页面banner2点击数
             
             JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
-            NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",indexPath.row+1];
+            NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
             
             payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
             payWebController.htmlSubmit =NO;

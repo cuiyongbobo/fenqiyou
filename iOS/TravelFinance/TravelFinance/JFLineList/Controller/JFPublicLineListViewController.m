@@ -174,7 +174,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"count %ld",self.stagingTourSelectItemArrayList.count);
+    NSLog(@"count %ld",(unsigned long)self.stagingTourSelectItemArrayList.count);
     return self.stagingTourSelectItemArrayList.count;
 }
 
@@ -196,7 +196,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"indexPath =%ld",indexPath.row);
+    NSLog(@"indexPath =%ld",(long)indexPath.row);
     
     if (self.stagingTourSelectItemArrayList.count>indexPath.row) {
         
