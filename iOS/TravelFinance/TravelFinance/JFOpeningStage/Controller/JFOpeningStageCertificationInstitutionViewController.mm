@@ -66,6 +66,11 @@
     
     [super viewWillAppear:animated];
     
+    if ([UIDevice currentDevice].systemVersion.floatValue == 7) {
+        [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:JFKNavigationBarBackgroundColor]];
+    }else{
+        [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:JFKNavigationBarBackgroundColor]];
+    }
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:JFKSesameAuthorization] || [[NSUserDefaults standardUserDefaults] objectForKey:JFKCreditAuthorization]) {
         
@@ -210,14 +215,12 @@
 
 - (void)creditResult:(NSMutableDictionary*)dic {
     
-    
     if ([UIDevice currentDevice].systemVersion.floatValue == 7) {
         // JFKNavigationBarBackgroundColor
         [self.navigationController.navigationBar setTintColor:[UIColor colorWithHexString:JFKNavigationBarBackgroundColor]];
     }else{
         [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:JFKNavigationBarBackgroundColor]];
     }
-    
     // 请求解密
     // 请求接口
     

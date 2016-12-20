@@ -72,6 +72,13 @@
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:JFKSetGesturePassword];
             [[NSUserDefaults standardUserDefaults]synchronize];
             
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:JFKCreditAuthorization];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:JFKSesameAuthorization];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
+            
             self.navigationController.tabBarController.selectedIndex = 0;
             [self.navigationController popToRootViewControllerAnimated:YES]; // 回到根试图
             
