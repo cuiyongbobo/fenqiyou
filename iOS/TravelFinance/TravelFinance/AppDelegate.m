@@ -17,6 +17,7 @@
 #import "JFGuideViewController.h"
 #import "JFUmengMgr.h"
 
+// 测试
 @interface AppDelegate ()
 
 @end
