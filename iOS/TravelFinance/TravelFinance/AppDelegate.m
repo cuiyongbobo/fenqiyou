@@ -16,8 +16,12 @@
 #import "ViewController.h"
 #import "JFGuideViewController.h"
 #import "JFUmengMgr.h"
+#import "STIDCard.h"
+#import "STAPIAccountInfo.h"
+#import "JFBaseLibCommon.h"
+#import "JFMacro.h"
 
-// 测试
+
 @interface AppDelegate ()
 
 @end
@@ -29,6 +33,9 @@
     
     [[ALCreditService sharedService] resgisterApp];
     [[JFUmengMgr sharedUmengMgr] configUmengSettings];
+    [STIDCard setupTheAPIAccountWithID:kJFACCOUNTAPIID andWithSecret:kJFACCOUNTAPISECRET];
+    
+    //    [NSThread sleepForTimeInterval:2.0];  //这里延时两秒
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:JFKImplementGuide]) {
         UIViewController *viewController = self.window.rootViewController;

@@ -42,12 +42,12 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503483060.369908"
+                  timestampString = "503992059.32973"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "128">
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -57,12 +57,12 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503483060.371443"
+                  timestampString = "503992059.331212"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "40">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -336,22 +336,6 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelFinance/JFOpeningStage/Model/JFQuotaParser.m"
-            timestampString = "501073159.733471"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-parseData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -762,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "503477196.331955"
+            timestampString = "503923198.211461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "641"
-            endingLineNumber = "641"
+            startingLineNumber = "645"
+            endingLineNumber = "645"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -874,11 +858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "503477196.331955"
+            timestampString = "503923198.211461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "605"
-            endingLineNumber = "605"
+            startingLineNumber = "609"
+            endingLineNumber = "609"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1104,6 +1088,102 @@
             startingLineNumber = "76"
             endingLineNumber = "76"
             landmarkName = "-webView:didCommitNavigation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Controller/JFResultViewController.m"
+            timestampString = "503984921.932019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "-getError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Controller/JFResultViewController.m"
+            timestampString = "503984921.932019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "-handleDistingResponse:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Controller/JFResultViewController.m"
+            timestampString = "503984921.932019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "-jfURLConnection:withError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Controller/JFResultViewController.m"
+            timestampString = "503984921.932019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "-handleDetermine:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Model/JFOcrIDDistinguishBuilder.m"
+            timestampString = "503986634.11297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-buildPostData:type:dataDict:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFOpeningStage/Controller/JFResultViewController.m"
+            timestampString = "503986720.236278"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-handleDetermine:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

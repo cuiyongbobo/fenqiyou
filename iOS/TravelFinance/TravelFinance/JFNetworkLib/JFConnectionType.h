@@ -77,7 +77,7 @@ typedef NS_ENUM(NSUInteger, YKConnectionType) {
     
     YKConnectionTypeReplacementBankCardSendMsg = 165,       /* 用户审核通过验证银行预留手机号 */
     
-    YKConnectionTypeLoadAddRateInfo            = 166,       /* 加息计划信息 */
+    JFConnectionTypeIDDisting            = 166,       /* 加息计划信息 */
     
     YKConnectionTypeLoadAdvanceTurnOutInfo     = 167,       /* 提前转出详情 */
     

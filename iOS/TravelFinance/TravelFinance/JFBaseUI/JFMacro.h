@@ -36,6 +36,9 @@
 
 #define FIXEDCONSTRAINT(x) x/[UIScreen mainScreen].scale //固定约束适配屏幕
 
+//#define ACCOUNT_API_ID (@"1bac2ddf9deb4a389d751ab9f374b59a")
+//#define ACCOUNT_API_SECRET (@"6969bf68de994b3383943ad602d9c69c")
+
 
 /* 系统 */
 #define iOS_8 UIDevice.currentDevice.systemVersion.intValue == 8

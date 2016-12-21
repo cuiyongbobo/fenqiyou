@@ -17,16 +17,16 @@ static NSString *const KYKRootURLName = @"jianlc.com/";
  *  线上服务URL
  */
 
-static NSString *const KYKRootURLOnline = @"http://api.u9fenqiyou.cn";
-static NSString *const KYKRootH5URLOnline = @"http://www.u9fenqiyou.cn";
+static NSString *const KYKRootURLOnline = @"https://api.u9fenqiyou.cn";
+static NSString *const KYKRootH5URLOnline = @"https://www.u9fenqiyou.cn";
 
 /**
  *  开发服务URL
  */
 
-static NSString *const KYKRootURLDevelop = @"http://api.u9fenqiyou.cn";
+static NSString *const KYKRootURLDevelop = @"https://api.u9fenqiyou.cn";
 
-static NSString *const KYKRootH5URLDevelop = @"http://www.u9fenqiyou.cn";
+static NSString *const KYKRootH5URLDevelop = @"https://www.u9fenqiyou.cn";
 
 //static NSString *const KYKRootURLDevelop = @"http://139.129.237.13/fqy_server";
 //
@@ -57,6 +57,11 @@ static NSString * const kYKWeChatDefaultAppID = @"wx12f011751a445199";
 static NSString * const kYKWeChatDefaultAppSecret = @"ee3dcd01b67d104ede9a42a56a423f5a";
 
 static NSString * const kYKAppDefaultID = @"987830667";
+
+
+static NSString * const kJFACCOUNTAPIID = @"1bac2ddf9deb4a389d751ab9f374b59a";
+static NSString *const kJFACCOUNTAPISECRET = @"6969bf68de994b3383943ad602d9c69c";
+
 
 /**
  *  工具函数

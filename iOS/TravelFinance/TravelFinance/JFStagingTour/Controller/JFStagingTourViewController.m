@@ -44,7 +44,7 @@
 #import "YKReachabilityMgr.h"
 #import "JFBaseLibCommon.h"
 #import "YKToastView.h"
-
+#import "JFResultViewController.h"
 
 
 @interface JFStagingTourViewController ()<UITableViewDataSource,UITableViewDelegate,JFURLConnectionDelegate,JFBaseTableViewCellDelegate>
@@ -187,6 +187,10 @@
     afnets.connectionType = JFConnectionTypestagingTourList;
     
     
+    JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+    [self.navigationController pushViewController:resultController  animated:YES];
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -304,7 +308,7 @@
 
 
 - (void)handlestagingTourResponse:(NSDictionary *)dictionary {
-
+    
     NSLog(@"dic =%@",dictionary);
     JFStagingTourParser *stagingTourParser = [JFStagingTourParser sharedStagingTourParser];
     stagingTourParser.sourceData = dictionary;
