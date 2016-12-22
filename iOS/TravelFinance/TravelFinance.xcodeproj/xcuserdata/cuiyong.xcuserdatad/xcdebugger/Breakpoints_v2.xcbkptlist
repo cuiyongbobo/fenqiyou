@@ -42,7 +42,7 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503483060.369908"
+                  timestampString = "504085520.352422"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -57,7 +57,7 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "503483060.371443"
+                  timestampString = "504085520.353947"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -633,22 +633,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TravelFinance/JFBindingCard/Controller/JFBindingBankListViewController.m"
-            timestampString = "502609097.957984"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-handleBindingResponse:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFSubmitOrder/Controller/JFTravelPersonInformationViewController.m"
             timestampString = "502805205.185226"
             startingColumnNumber = "9223372036854775807"
@@ -1104,6 +1088,22 @@
             startingLineNumber = "76"
             endingLineNumber = "76"
             landmarkName = "-webView:didCommitNavigation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBindingCard/Controller/JFBindingBankListViewController.m"
+            timestampString = "504084600.808791"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-handleBindingResponse:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
