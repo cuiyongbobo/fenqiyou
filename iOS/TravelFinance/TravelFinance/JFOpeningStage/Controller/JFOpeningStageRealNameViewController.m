@@ -16,6 +16,7 @@
 
 #import "JFOpeningStageBindingBankCardViewController.h"
 #import "JFOpeningStageCertificationInstitutionViewController.h"
+#import "JFResultViewController.h"
 
 
 @interface JFOpeningStageRealNameViewController ()<JFURLConnectionDelegate>
@@ -144,11 +145,16 @@
             }else {
                 // 走业务
                 NSLog(@"走分期授权业务");
-                JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
-                [self.navigationController pushViewController:bindingBankController animated:YES];
+                
+                //                JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
+                //                [self.navigationController pushViewController:bindingBankController animated:YES];
+                
+                JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+                [self.navigationController pushViewController:resultController animated:YES];
+                
             }
             
-           
+            
         }else {
             [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:travelPersonParser.travelPerson.message backgroundcolor:white];
         }

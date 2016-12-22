@@ -31,7 +31,7 @@
     self.delegate = delegate;
     self.urlSession = [AFHTTPSessionManager manager];
     self.urlSession.responseSerializer = [AFHTTPResponseSerializer serializer];
-    self.urlSession.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json",@"multipart/form-data", nil];
+    self.urlSession.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/plain", @"text/javascript", @"text/json", nil];
     
     AFSecurityPolicy *policy = [AFSecurityPolicy defaultPolicy];
     policy.allowInvalidCertificates = YES;

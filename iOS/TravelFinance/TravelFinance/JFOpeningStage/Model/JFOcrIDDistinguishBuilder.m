@@ -32,7 +32,7 @@ static NSString *const KJDistingRequestURL = @"http://192.168.40.230:8090/fqy_se
     [paramDict setAllObject:[JFBaseLibCommon appVersion] forKey:@"requestVersion"];
     [paramDict setAllObject:userId forKey:@"userId"];
     [paramDict setAllObject:type forKey:@"type"];
-//    [paramDict setAllObject:dataDict[@"frontimage"] forKey:@"idCardA"];
+    [paramDict setAllObject:dataDict[@"frontimage"] forKey:@"idCardA"];
     [paramDict setAllObject:dataDict[@"binedimage"] forKey:@"idCardB"];
     [paramDict setAllObject:dataDict[@"name"] forKey:@"name"];
     [paramDict setAllObject:dataDict[@"gender"] forKey:@"gender"];

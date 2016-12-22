@@ -76,10 +76,6 @@
 		D719DD161DDD7BAF001EBBCD /* JFSesameAuthorizationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DD151DDD7BAF001EBBCD /* JFSesameAuthorizationParser.m */; };
 		D719DD191DDD890F001EBBCD /* JFQuotaBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DD181DDD890F001EBBCD /* JFQuotaBuilder.m */; };
 		D719DD1C1DDD8938001EBBCD /* JFQuotaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DD1B1DDD8938001EBBCD /* JFQuotaParser.m */; };
-		D723BB931E092B81009703E9 /* idcard.model in Resources */ = {isa = PBXBuildFile; fileRef = D723BB8C1E092B81009703E9 /* idcard.model */; };
-		D723BB941E092B81009703E9 /* lib_st_card_scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D723BB8D1E092B81009703E9 /* lib_st_card_scanner.a */; };
-		D723BB951E092B81009703E9 /* OCR_SDK_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D723BB8E1E092B81009703E9 /* OCR_SDK_Resource.bundle */; };
-		D723BB961E092B81009703E9 /* SenseID_OCR.lic in Resources */ = {isa = PBXBuildFile; fileRef = D723BB8F1E092B81009703E9 /* SenseID_OCR.lic */; };
 		D723BB9A1E092C0F009703E9 /* JFResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BB981E092C0F009703E9 /* JFResultViewController.m */; };
 		D723BB9B1E092C0F009703E9 /* JFResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D723BB991E092C0F009703E9 /* JFResultViewController.xib */; };
 		D723BB9E1E0935CA009703E9 /* JFOcrIDDistinguishBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BB9D1E0935CA009703E9 /* JFOcrIDDistinguishBuilder.m */; };
@@ -87,6 +83,18 @@
 		D723BBA91E094BE9009703E9 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA41E094BE9009703E9 /* AESCrypt.m */; };
 		D723BBAA1E094BE9009703E9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA61E094BE9009703E9 /* NSData+Base64.m */; };
 		D723BBAB1E094BE9009703E9 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA81E094BE9009703E9 /* NSString+Base64.m */; };
+		D72FB2B11E0B6D4A0087BADF /* idcard.model in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2AA1E0B6D4A0087BADF /* idcard.model */; };
+		D72FB2B21E0B6D4A0087BADF /* lib_st_card_scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72FB2AB1E0B6D4A0087BADF /* lib_st_card_scanner.a */; };
+		D72FB2B31E0B6D4A0087BADF /* OCR_SDK_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2AC1E0B6D4A0087BADF /* OCR_SDK_Resource.bundle */; };
+		D72FB2B41E0B6D4A0087BADF /* SenseID_OCR.lic in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2AD1E0B6D4A0087BADF /* SenseID_OCR.lic */; };
+		D72FB2CA1E0B6D510087BADF /* libSTLivenessDetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72FB2B61E0B6D510087BADF /* libSTLivenessDetector.a */; };
+		D72FB2CB1E0B6D510087BADF /* M_Finance_Composite_General_Liveness_1.0.model in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2B71E0B6D510087BADF /* M_Finance_Composite_General_Liveness_1.0.model */; };
+		D72FB2CC1E0B6D510087BADF /* SenseID_Liveness.lic in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2B81E0B6D510087BADF /* SenseID_Liveness.lic */; };
+		D72FB2CD1E0B6D510087BADF /* st_liveness_resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2B91E0B6D510087BADF /* st_liveness_resource.bundle */; };
+		D72FB2CE1E0B6D510087BADF /* STLivenessController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72FB2BE1E0B6D510087BADF /* STLivenessController.m */; };
+		D72FB2CF1E0B6D510087BADF /* SZNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D72FB2C61E0B6D510087BADF /* SZNumberLabel.m */; };
+		D72FB2D01E0B6D520087BADF /* UIView+STLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D72FB2C81E0B6D510087BADF /* UIView+STLayout.m */; };
+		D72FB2D11E0B6D520087BADF /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2C91E0B6D510087BADF /* VERSION */; };
 		D73078CE1DE7DDB7004B41C3 /* JFUpdateVersionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D73078CD1DE7DDB7004B41C3 /* JFUpdateVersionBuilder.m */; };
 		D73078D11DE7DDCD004B41C3 /* JFUpdateVersionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D73078D01DE7DDCD004B41C3 /* JFUpdateVersionParser.m */; };
 		D73078D51DE80837004B41C3 /* JFUpdateVersionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D73078D41DE80837004B41C3 /* JFUpdateVersionItem.m */; };
@@ -147,6 +155,10 @@
 		D751D5B71DED88FC00147EC3 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D751D5A21DED88FC00147EC3 /* UIScrollView+MJExtension.m */; };
 		D751D5B81DED88FC00147EC3 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D751D5A41DED88FC00147EC3 /* UIScrollView+MJRefresh.m */; };
 		D751D5B91DED88FC00147EC3 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D751D5A61DED88FC00147EC3 /* UIView+MJExtension.m */; };
+		D754A9DA1E0A75AD000E80E1 /* JFlivingDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D754A9D81E0A75AD000E80E1 /* JFlivingDetectionViewController.m */; };
+		D754A9DB1E0A75AD000E80E1 /* JFlivingDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D754A9D91E0A75AD000E80E1 /* JFlivingDetectionViewController.xib */; };
+		D754A9FB1E0A789D000E80E1 /* JFFaceDetectionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D754A9FA1E0A789D000E80E1 /* JFFaceDetectionBuilder.m */; };
+		D754A9FE1E0A78AF000E80E1 /* JFFaceDetectionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D754A9FD1E0A78AF000E80E1 /* JFFaceDetectionParser.m */; };
 		D75524AD1DBDE474008EB79C /* JFInputPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75524AB1DBDE474008EB79C /* JFInputPhoneNumberViewController.m */; };
 		D75524AE1DBDE474008EB79C /* JFInputPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75524AC1DBDE474008EB79C /* JFInputPhoneNumberViewController.xib */; };
 		D75524B21DBDF814008EB79C /* JFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75524B01DBDF814008EB79C /* JFLoginViewController.m */; };
@@ -538,13 +550,6 @@
 		D719DD181DDD890F001EBBCD /* JFQuotaBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFQuotaBuilder.m; sourceTree = "<group>"; };
 		D719DD1A1DDD8938001EBBCD /* JFQuotaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFQuotaParser.h; sourceTree = "<group>"; };
 		D719DD1B1DDD8938001EBBCD /* JFQuotaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFQuotaParser.m; sourceTree = "<group>"; };
-		D723BB8C1E092B81009703E9 /* idcard.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = idcard.model; sourceTree = "<group>"; };
-		D723BB8D1E092B81009703E9 /* lib_st_card_scanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib_st_card_scanner.a; sourceTree = "<group>"; };
-		D723BB8E1E092B81009703E9 /* OCR_SDK_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OCR_SDK_Resource.bundle; sourceTree = "<group>"; };
-		D723BB8F1E092B81009703E9 /* SenseID_OCR.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SenseID_OCR.lic; sourceTree = "<group>"; };
-		D723BB901E092B81009703E9 /* STAPIAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAPIAccountInfo.h; sourceTree = "<group>"; };
-		D723BB911E092B81009703E9 /* STIDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIDCard.h; sourceTree = "<group>"; };
-		D723BB921E092B81009703E9 /* STIDCardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIDCardScanner.h; sourceTree = "<group>"; };
 		D723BB971E092C0F009703E9 /* JFResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFResultViewController.h; sourceTree = "<group>"; };
 		D723BB981E092C0F009703E9 /* JFResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFResultViewController.m; sourceTree = "<group>"; };
 		D723BB991E092C0F009703E9 /* JFResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFResultViewController.xib; sourceTree = "<group>"; };
@@ -558,6 +563,33 @@
 		D723BBA61E094BE9009703E9 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		D723BBA71E094BE9009703E9 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		D723BBA81E094BE9009703E9 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		D72FB2AA1E0B6D4A0087BADF /* idcard.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = idcard.model; sourceTree = "<group>"; };
+		D72FB2AB1E0B6D4A0087BADF /* lib_st_card_scanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib_st_card_scanner.a; sourceTree = "<group>"; };
+		D72FB2AC1E0B6D4A0087BADF /* OCR_SDK_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OCR_SDK_Resource.bundle; sourceTree = "<group>"; };
+		D72FB2AD1E0B6D4A0087BADF /* SenseID_OCR.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SenseID_OCR.lic; sourceTree = "<group>"; };
+		D72FB2AE1E0B6D4A0087BADF /* STAPIAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAPIAccountInfo.h; sourceTree = "<group>"; };
+		D72FB2AF1E0B6D4A0087BADF /* STIDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIDCard.h; sourceTree = "<group>"; };
+		D72FB2B01E0B6D4A0087BADF /* STIDCardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIDCardScanner.h; sourceTree = "<group>"; };
+		D72FB2B61E0B6D510087BADF /* libSTLivenessDetector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSTLivenessDetector.a; sourceTree = "<group>"; };
+		D72FB2B71E0B6D510087BADF /* M_Finance_Composite_General_Liveness_1.0.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = M_Finance_Composite_General_Liveness_1.0.model; sourceTree = "<group>"; };
+		D72FB2B81E0B6D510087BADF /* SenseID_Liveness.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SenseID_Liveness.lic; sourceTree = "<group>"; };
+		D72FB2B91E0B6D510087BADF /* st_liveness_resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = st_liveness_resource.bundle; sourceTree = "<group>"; };
+		D72FB2BA1E0B6D510087BADF /* STFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFace.h; sourceTree = "<group>"; };
+		D72FB2BB1E0B6D510087BADF /* STImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STImage.h; sourceTree = "<group>"; };
+		D72FB2BC1E0B6D510087BADF /* STLivenessCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessCommon.h; sourceTree = "<group>"; };
+		D72FB2BD1E0B6D510087BADF /* STLivenessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessController.h; sourceTree = "<group>"; };
+		D72FB2BE1E0B6D510087BADF /* STLivenessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLivenessController.m; sourceTree = "<group>"; };
+		D72FB2BF1E0B6D510087BADF /* STLivenessDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessDetector.h; sourceTree = "<group>"; };
+		D72FB2C01E0B6D510087BADF /* STLivenessDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessDetectorDelegate.h; sourceTree = "<group>"; };
+		D72FB2C11E0B6D510087BADF /* STLivenessEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessEnumType.h; sourceTree = "<group>"; };
+		D72FB2C21E0B6D510087BADF /* STPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPoint.h; sourceTree = "<group>"; };
+		D72FB2C31E0B6D510087BADF /* STRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRect.h; sourceTree = "<group>"; };
+		D72FB2C41E0B6D510087BADF /* STTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTracker.h; sourceTree = "<group>"; };
+		D72FB2C51E0B6D510087BADF /* SZNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNumberLabel.h; sourceTree = "<group>"; };
+		D72FB2C61E0B6D510087BADF /* SZNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNumberLabel.m; sourceTree = "<group>"; };
+		D72FB2C71E0B6D510087BADF /* UIView+STLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STLayout.h"; sourceTree = "<group>"; };
+		D72FB2C81E0B6D510087BADF /* UIView+STLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STLayout.m"; sourceTree = "<group>"; };
+		D72FB2C91E0B6D510087BADF /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		D73078CC1DE7DDB7004B41C3 /* JFUpdateVersionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUpdateVersionBuilder.h; sourceTree = "<group>"; };
 		D73078CD1DE7DDB7004B41C3 /* JFUpdateVersionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFUpdateVersionBuilder.m; sourceTree = "<group>"; };
 		D73078CF1DE7DDCD004B41C3 /* JFUpdateVersionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFUpdateVersionParser.h; sourceTree = "<group>"; };
@@ -666,6 +698,13 @@
 		D751D5A41DED88FC00147EC3 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		D751D5A51DED88FC00147EC3 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		D751D5A61DED88FC00147EC3 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		D754A9D71E0A75AD000E80E1 /* JFlivingDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFlivingDetectionViewController.h; sourceTree = "<group>"; };
+		D754A9D81E0A75AD000E80E1 /* JFlivingDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFlivingDetectionViewController.m; sourceTree = "<group>"; };
+		D754A9D91E0A75AD000E80E1 /* JFlivingDetectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFlivingDetectionViewController.xib; sourceTree = "<group>"; };
+		D754A9F91E0A789D000E80E1 /* JFFaceDetectionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFaceDetectionBuilder.h; sourceTree = "<group>"; };
+		D754A9FA1E0A789D000E80E1 /* JFFaceDetectionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFaceDetectionBuilder.m; sourceTree = "<group>"; };
+		D754A9FC1E0A78AF000E80E1 /* JFFaceDetectionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFaceDetectionParser.h; sourceTree = "<group>"; };
+		D754A9FD1E0A78AF000E80E1 /* JFFaceDetectionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFaceDetectionParser.m; sourceTree = "<group>"; };
 		D75524AA1DBDE474008EB79C /* JFInputPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFInputPhoneNumberViewController.h; sourceTree = "<group>"; };
 		D75524AB1DBDE474008EB79C /* JFInputPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFInputPhoneNumberViewController.m; sourceTree = "<group>"; };
 		D75524AC1DBDE474008EB79C /* JFInputPhoneNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFInputPhoneNumberViewController.xib; sourceTree = "<group>"; };
@@ -1100,13 +1139,14 @@
 				D73078D71DE84223004B41C3 /* UMMobClick.framework in Frameworks */,
 				D7106BD61DDE9CD7008D9DF1 /* CFNetwork.framework in Frameworks */,
 				D7106BD41DDE9CCE008D9DF1 /* MobileCoreServices.framework in Frameworks */,
-				D723BB941E092B81009703E9 /* lib_st_card_scanner.a in Frameworks */,
+				D72FB2B21E0B6D4A0087BADF /* lib_st_card_scanner.a in Frameworks */,
 				D7106BD21DDE9CC3008D9DF1 /* MessageUI.framework in Frameworks */,
 				D7D86FEC1DED1DCB00651843 /* libSocialWeChat.a in Frameworks */,
 				D7D86FFB1DED221C00651843 /* ZMCreditSDK.framework in Frameworks */,
 				D7106BD01DDE9CBA008D9DF1 /* EventKit.framework in Frameworks */,
 				D7106BCE1DDE9CAD008D9DF1 /* AssetsLibrary.framework in Frameworks */,
 				D7106BCC1DDE9CA3008D9DF1 /* CoreMotion.framework in Frameworks */,
+				D72FB2CA1E0B6D510087BADF /* libSTLivenessDetector.a in Frameworks */,
 				D7106BC81DDE9C8E008D9DF1 /* SystemConfiguration.framework in Frameworks */,
 				D7106BC61DDE9C83008D9DF1 /* CoreTelephony.framework in Frameworks */,
 				D7D86FFC1DED221C00651843 /* ZMDependUponSDK.framework in Frameworks */,
@@ -1199,20 +1239,6 @@
 			name = JFBankListModel;
 			sourceTree = "<group>";
 		};
-		D723BB8B1E092B81009703E9 /* IdCardLib */ = {
-			isa = PBXGroup;
-			children = (
-				D723BB8C1E092B81009703E9 /* idcard.model */,
-				D723BB8D1E092B81009703E9 /* lib_st_card_scanner.a */,
-				D723BB8E1E092B81009703E9 /* OCR_SDK_Resource.bundle */,
-				D723BB8F1E092B81009703E9 /* SenseID_OCR.lic */,
-				D723BB901E092B81009703E9 /* STAPIAccountInfo.h */,
-				D723BB911E092B81009703E9 /* STIDCard.h */,
-				D723BB921E092B81009703E9 /* STIDCardScanner.h */,
-			);
-			path = IdCardLib;
-			sourceTree = "<group>";
-		};
 		D723BBA21E094BE9009703E9 /* crypt */ = {
 			isa = PBXGroup;
 			children = (
@@ -1224,6 +1250,47 @@
 				D723BBA81E094BE9009703E9 /* NSString+Base64.m */,
 			);
 			path = crypt;
+			sourceTree = "<group>";
+		};
+		D72FB2A91E0B6D4A0087BADF /* IdCardLib */ = {
+			isa = PBXGroup;
+			children = (
+				D72FB2AA1E0B6D4A0087BADF /* idcard.model */,
+				D72FB2AB1E0B6D4A0087BADF /* lib_st_card_scanner.a */,
+				D72FB2AC1E0B6D4A0087BADF /* OCR_SDK_Resource.bundle */,
+				D72FB2AD1E0B6D4A0087BADF /* SenseID_OCR.lic */,
+				D72FB2AE1E0B6D4A0087BADF /* STAPIAccountInfo.h */,
+				D72FB2AF1E0B6D4A0087BADF /* STIDCard.h */,
+				D72FB2B01E0B6D4A0087BADF /* STIDCardScanner.h */,
+			);
+			path = IdCardLib;
+			sourceTree = "<group>";
+		};
+		D72FB2B51E0B6D510087BADF /* libSTLivenessController */ = {
+			isa = PBXGroup;
+			children = (
+				D72FB2B61E0B6D510087BADF /* libSTLivenessDetector.a */,
+				D72FB2B71E0B6D510087BADF /* M_Finance_Composite_General_Liveness_1.0.model */,
+				D72FB2B81E0B6D510087BADF /* SenseID_Liveness.lic */,
+				D72FB2B91E0B6D510087BADF /* st_liveness_resource.bundle */,
+				D72FB2BA1E0B6D510087BADF /* STFace.h */,
+				D72FB2BB1E0B6D510087BADF /* STImage.h */,
+				D72FB2BC1E0B6D510087BADF /* STLivenessCommon.h */,
+				D72FB2BD1E0B6D510087BADF /* STLivenessController.h */,
+				D72FB2BE1E0B6D510087BADF /* STLivenessController.m */,
+				D72FB2BF1E0B6D510087BADF /* STLivenessDetector.h */,
+				D72FB2C01E0B6D510087BADF /* STLivenessDetectorDelegate.h */,
+				D72FB2C11E0B6D510087BADF /* STLivenessEnumType.h */,
+				D72FB2C21E0B6D510087BADF /* STPoint.h */,
+				D72FB2C31E0B6D510087BADF /* STRect.h */,
+				D72FB2C41E0B6D510087BADF /* STTracker.h */,
+				D72FB2C51E0B6D510087BADF /* SZNumberLabel.h */,
+				D72FB2C61E0B6D510087BADF /* SZNumberLabel.m */,
+				D72FB2C71E0B6D510087BADF /* UIView+STLayout.h */,
+				D72FB2C81E0B6D510087BADF /* UIView+STLayout.m */,
+				D72FB2C91E0B6D510087BADF /* VERSION */,
+			);
+			path = libSTLivenessController;
 			sourceTree = "<group>";
 		};
 		D73078CA1DE7DD6B004B41C3 /* Model */ = {
@@ -1854,6 +1921,9 @@
 		D7B404C11DDC661F00A6C30B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D754A9D71E0A75AD000E80E1 /* JFlivingDetectionViewController.h */,
+				D754A9D81E0A75AD000E80E1 /* JFlivingDetectionViewController.m */,
+				D754A9D91E0A75AD000E80E1 /* JFlivingDetectionViewController.xib */,
 				D723BB971E092C0F009703E9 /* JFResultViewController.h */,
 				D723BB981E092C0F009703E9 /* JFResultViewController.m */,
 				D723BB991E092C0F009703E9 /* JFResultViewController.xib */,
@@ -1898,6 +1968,10 @@
 				D723BB9D1E0935CA009703E9 /* JFOcrIDDistinguishBuilder.m */,
 				D723BB9F1E093D9B009703E9 /* JFOcrIDDistinguishParser.h */,
 				D723BBA01E093D9B009703E9 /* JFOcrIDDistinguishParser.m */,
+				D754A9F91E0A789D000E80E1 /* JFFaceDetectionBuilder.h */,
+				D754A9FA1E0A789D000E80E1 /* JFFaceDetectionBuilder.m */,
+				D754A9FC1E0A78AF000E80E1 /* JFFaceDetectionParser.h */,
+				D754A9FD1E0A78AF000E80E1 /* JFFaceDetectionParser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2064,8 +2138,9 @@
 		D7B4A9F11DBC6E1B00D38CC9 /* JFBaseLib */ = {
 			isa = PBXGroup;
 			children = (
+				D72FB2B51E0B6D510087BADF /* libSTLivenessController */,
+				D72FB2A91E0B6D4A0087BADF /* IdCardLib */,
 				D723BBA21E094BE9009703E9 /* crypt */,
-				D723BB8B1E092B81009703E9 /* IdCardLib */,
 				D751D57A1DED88FC00147EC3 /* MJRefresh */,
 				D7D86FF41DED221C00651843 /* ZMCreditSDK */,
 				D7D86FDA1DED1DCB00651843 /* SocialLibraries */,
@@ -2757,10 +2832,10 @@
 				D763C4011DF54810005E3B02 /* GDB@2x.png in Resources */,
 				D763C3EA1DF54810005E3B02 /* BOB@3x.png in Resources */,
 				D763C4051DF54810005E3B02 /* ICBC@2x.png in Resources */,
-				D723BB951E092B81009703E9 /* OCR_SDK_Resource.bundle in Resources */,
 				D7B404C81DDC66E100A6C30B /* JFOpeningStageRealNameViewController.xib in Resources */,
 				D7387CDC1DDAC6DC0063EC1F /* JFPersonalRetirementTableViewCell.xib in Resources */,
 				D763C3FB1DF54810005E3B02 /* CMB@2x.png in Resources */,
+				D72FB2B41E0B6D4A0087BADF /* SenseID_OCR.lic in Resources */,
 				D77CAF121E03C317008ACE0F /* guide_2~1334h.jpg in Resources */,
 				D715C8741DD98A8B0038197D /* JFTravelOrdersViewController.xib in Resources */,
 				D718DF941DD1FD4E0049C8C9 /* JFTravelPersonInformationViewController.xib in Resources */,
@@ -2772,6 +2847,7 @@
 				D77CAF101E03C317008ACE0F /* guide_2@2x.jpg in Resources */,
 				D715C8791DD99D0F0038197D /* JFTravelOrdersTableViewCell.xib in Resources */,
 				D763C4021DF54810005E3B02 /* GDB@3x.png in Resources */,
+				D72FB2B11E0B6D4A0087BADF /* idcard.model in Resources */,
 				D763C4041DF54810005E3B02 /* HXB@3x.png in Resources */,
 				D77CAF111E03C317008ACE0F /* guide_2~1136h.jpg in Resources */,
 				D7387CD21DDAB7180063EC1F /* JFPersonalInformationListTableViewCell.xib in Resources */,
@@ -2793,6 +2869,7 @@
 				D7B4D57D1DC49C4A006DA69B /* JFstagingTourRecommendedListTableViewCell.xib in Resources */,
 				D7DD90F51DE6D587007F2340 /* YKUpdateVersionViewController.xib in Resources */,
 				D763C3E71DF54810005E3B02 /* BCM@2x.png in Resources */,
+				D72FB2CC1E0B6D510087BADF /* SenseID_Liveness.lic in Resources */,
 				D723BB9B1E092C0F009703E9 /* JFResultViewController.xib in Resources */,
 				D7B964041DD33CB1009A14A9 /* JFBindingBankListTableViewCell.xib in Resources */,
 				D77EBF221DCC52D9003294B4 /* JFWebViewController.xib in Resources */,
@@ -2814,6 +2891,7 @@
 				D7B9640D1DD34753009A14A9 /* JFCouponViewController.xib in Resources */,
 				D75524B31DBDF814008EB79C /* JFLoginViewController.xib in Resources */,
 				D763C3ED1DF54810005E3B02 /* BOGZ@2x.png in Resources */,
+				D754A9DB1E0A75AD000E80E1 /* JFlivingDetectionViewController.xib in Resources */,
 				D7B404E11DDC8C2800A6C30B /* JFOpeningStageFailViewController.xib in Resources */,
 				D77CAF141E03C317008ACE0F /* guide_3@2x.jpg in Resources */,
 				D718DF9E1DD2022D0049C8C9 /* JFsubmitOrderInformationTableViewCell.xib in Resources */,
@@ -2827,6 +2905,7 @@
 				D7D86FEE1DED1DCB00651843 /* read_me.txt in Resources */,
 				D715C86F1DD95FD20038197D /* JFNotLoginMyAccountInformationTableViewCell.xib in Resources */,
 				D763C3F71DF54810005E3B02 /* CIB@2x.png in Resources */,
+				D72FB2D11E0B6D520087BADF /* VERSION in Resources */,
 				D763C3FC1DF54810005E3B02 /* CMB@3x.png in Resources */,
 				D7B4A9C11DBC673800D38CC9 /* Main.storyboard in Resources */,
 				D763C40F1DF54B6C005E3B02 /* CGB@2x.png in Resources */,
@@ -2842,10 +2921,11 @@
 				D734B5801DD86817008340BE /* JFAccountAvailableCreditInformationTableViewCell.xib in Resources */,
 				D7B4D55F1DC4425D006DA69B /* stagingTourBannerTableViewCell.xib in Resources */,
 				D7387CCD1DDAB6190063EC1F /* JFPersonalInformationTableViewCell.xib in Resources */,
+				D72FB2CB1E0B6D510087BADF /* M_Finance_Composite_General_Liveness_1.0.model in Resources */,
 				D7D86FEF1DED1DCB00651843 /* README.txt in Resources */,
 				D7B404CD1DDC730700A6C30B /* JFOpeningStageBindingBankCardViewController.xib in Resources */,
-				D723BB961E092B81009703E9 /* SenseID_OCR.lic in Resources */,
 				D763C3F91DF54810005E3B02 /* CITIC@2x.png in Resources */,
+				D72FB2CD1E0B6D510087BADF /* st_liveness_resource.bundle in Resources */,
 				D763C3FA1DF54810005E3B02 /* CITIC@3x.png in Resources */,
 				D7D86FF91DED221C00651843 /* H5Service.bundle in Resources */,
 				D763C3EB1DF54810005E3B02 /* BOC@2x.png in Resources */,
@@ -2857,10 +2937,10 @@
 				D763C3F51DF54810005E3B02 /* CEB@2x.png in Resources */,
 				D7387CF21DDB069D0063EC1F /* JFResetGesturepasswordViewController.xib in Resources */,
 				D763C4031DF54810005E3B02 /* HXB@2x.png in Resources */,
+				D72FB2B31E0B6D4A0087BADF /* OCR_SDK_Resource.bundle in Resources */,
 				D7E7586A1DD0B1B70063F9C9 /* JFsubmitOrderguaranteeAgreementTableViewCell.xib in Resources */,
 				D77EBF191DCAD665003294B4 /* JFstagingTourplayFreeTtemView.xib in Resources */,
 				D763C3F31DF54810005E3B02 /* CCB@2x.png in Resources */,
-				D723BB931E092B81009703E9 /* idcard.model in Resources */,
 				D763C3FE1DF54810005E3B02 /* CMBC@3x.png in Resources */,
 				D763C3FF1DF54810005E3B02 /* CZB@2x.png in Resources */,
 				D79E17DD1DC8360E002A8560 /* JFPublicLineListTableViewCell.xib in Resources */,
@@ -2982,6 +3062,7 @@
 				D73078D51DE80837004B41C3 /* JFUpdateVersionItem.m in Sources */,
 				D734B5751DD84621008340BE /* JFAccountPersonInformationTableViewCell.m in Sources */,
 				D751D5B31DED88FC00147EC3 /* MJRefreshNormalHeader.m in Sources */,
+				D754A9DA1E0A75AD000E80E1 /* JFlivingDetectionViewController.m in Sources */,
 				D7066FB01DC2F93900ED7BBA /* JFPhoneInformation.m in Sources */,
 				D7B4A9FA1DBC742A00D38CC9 /* JFColor.m in Sources */,
 				D723BBAB1E094BE9009703E9 /* NSString+Base64.m in Sources */,
@@ -3036,6 +3117,7 @@
 				D7140BA01DD49116000D4A63 /* NSMutableArray+Hex.m in Sources */,
 				D792E7F41DF981A600F6A493 /* YKReachabilityMgr.m in Sources */,
 				D7B4A9F71DBC713400D38CC9 /* JFDevice.m in Sources */,
+				D72FB2D01E0B6D520087BADF /* UIView+STLayout.m in Sources */,
 				D7B4D5C61DC64290006DA69B /* SDWebImagePrefetcher.m in Sources */,
 				D75524C21DBF44DD008EB79C /* JFRegisterViewController.m in Sources */,
 				D7B4D5C51DC64290006DA69B /* SDWebImageManager.m in Sources */,
@@ -3060,6 +3142,7 @@
 				D7066FC51DC34AF900ED7BBA /* NSMutableDictionary+HexDict.m in Sources */,
 				D723BBA11E093D9B009703E9 /* JFOcrIDDistinguishParser.m in Sources */,
 				D7B4D5C31DC64290006DA69B /* SDWebImageDownloader.m in Sources */,
+				D72FB2CE1E0B6D510087BADF /* STLivenessController.m in Sources */,
 				D712277B1E014E4C00E24C71 /* MyScrollView.m in Sources */,
 				D77EBF421DCC53C4003294B4 /* MASViewConstraint.m in Sources */,
 				D751D5B61DED88FC00147EC3 /* MJRefreshConst.m in Sources */,
@@ -3095,6 +3178,7 @@
 				D7387CF61DDB0A9A0063EC1F /* JFPersonaGesturepasswordTableViewCell.m in Sources */,
 				D7106BEB1DDF1970008D9DF1 /* JFTravelOrdersBuilder.m in Sources */,
 				D78416CD1DCDAA50007A1530 /* JFWebViewJSCallBack.m in Sources */,
+				D72FB2CF1E0B6D510087BADF /* SZNumberLabel.m in Sources */,
 				D7B4D55E1DC4425D006DA69B /* stagingTourBannerTableViewCell.m in Sources */,
 				D77EBF3D1DCC53C4003294B4 /* MASCompositeConstraint.m in Sources */,
 				D77EBF211DCC52D9003294B4 /* JFWebViewController.m in Sources */,
@@ -3116,6 +3200,7 @@
 				D715C8781DD99D0F0038197D /* JFTravelOrdersTableViewCell.m in Sources */,
 				D7B4D5991DC64034006DA69B /* SDCollectionViewCell.m in Sources */,
 				D77EBF411DCC53C4003294B4 /* MASViewAttribute.m in Sources */,
+				D754A9FB1E0A789D000E80E1 /* JFFaceDetectionBuilder.m in Sources */,
 				D7D86FD51DED184100651843 /* YKShareViewController.m in Sources */,
 				D7B4D5CB1DC64290006DA69B /* UIImageView+HighlightedWebCache.m in Sources */,
 				D75525751DC08A91008EB79C /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -3134,6 +3219,7 @@
 				D79E17CB1DC71ADD002A8560 /* JFBaseTableViewCell.m in Sources */,
 				D751D5A81DED88FC00147EC3 /* MJRefreshBackFooter.m in Sources */,
 				D75525431DC0868B008EB79C /* JFNetworkAFN.m in Sources */,
+				D754A9FE1E0A78AF000E80E1 /* JFFaceDetectionParser.m in Sources */,
 				D73536B41DFA47D800E22346 /* YKToastView.m in Sources */,
 				D751D5AB1DED88FC00147EC3 /* MJRefreshHeader.m in Sources */,
 				D7066FAD1DC2E97A00ED7BBA /* JFSendCodeParser.m in Sources */,
@@ -3322,6 +3408,7 @@
 					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/SocialLibraries/WeChat",
 					"$(SRCROOT)/TravelFinance/Framework",
 					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/IdCardLib",
+					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/libSTLivenessController",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -3366,6 +3453,7 @@
 					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/SocialLibraries/WeChat",
 					"$(SRCROOT)/TravelFinance/Framework",
 					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/IdCardLib",
+					"$(PROJECT_DIR)/TravelFinance/JFBaseLib/libSTLivenessController",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFlivingDetectionViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_scanningLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-Y1-9dE">
+                    <rect key="frame" x="127" y="50" width="121" height="107"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请保持光线明亮，不要倾斜手机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H8-aY-XSa">
+                    <rect key="frame" x="80" y="177" width="215" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_closeEyesLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xcf-Eb-SbC">
+                    <rect key="frame" x="28" y="245" width="87.5" height="87"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_openMouthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-Sm-w9h">
+                    <rect key="frame" x="143.5" y="245" width="88" height="87"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_headLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vHG-8S-Pyw">
+                    <rect key="frame" x="259.5" y="245" width="87.5" height="87"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请眨眼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReK-Hz-6eo">
+                    <rect key="frame" x="50.5" y="342" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.24313725490196078" green="0.57647058823529407" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请张嘴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyt-Y2-gtL">
+                    <rect key="frame" x="166" y="342" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.24313725489999999" green="0.57647058819999997" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请摇头" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ6-9v-t9g">
+                    <rect key="frame" x="282" y="342" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.24313725489999999" green="0.57647058819999997" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证时，请将正脸正对屏幕。然后跟随" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APb-ci-LtF">
+                    <rect key="frame" x="66" y="391" width="243" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡通形象完成随机脸部动作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjQ-Ie-Fr8">
+                    <rect key="frame" x="101.5" y="416" width="172" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优玖分期游不会在任何地方泄露您的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guv-ky-fdM">
+                    <rect key="frame" x="77" y="627" width="221" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-mN-1zb">
+                    <rect key="frame" x="27" y="575" width="321" height="40"/>
+                    <state key="normal" backgroundImage="openingstage_Testbutton"/>
+                    <connections>
+                        <action selector="handleFaceDetection:" destination="-1" eventType="touchUpInside" id="n7X-4E-0Cl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VJ8-Y1-9dE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="07o-6L-hyZ"/>
+                <constraint firstItem="vHG-8S-Pyw" firstAttribute="leading" secondItem="a9b-Sm-w9h" secondAttribute="trailing" constant="28" id="1tG-3B-Obr"/>
+                <constraint firstItem="QjQ-Ie-Fr8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3CT-ow-92L"/>
+                <constraint firstItem="vHG-8S-Pyw" firstAttribute="top" secondItem="Xcf-Eb-SbC" secondAttribute="top" id="67X-oI-Yky"/>
+                <constraint firstItem="iPf-mN-1zb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="719-Iw-qbM"/>
+                <constraint firstItem="a9b-Sm-w9h" firstAttribute="top" secondItem="Xcf-Eb-SbC" secondAttribute="top" id="781-Wn-hY4"/>
+                <constraint firstItem="3H8-aY-XSa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8xh-pm-x1W"/>
+                <constraint firstItem="a9b-Sm-w9h" firstAttribute="leading" secondItem="Xcf-Eb-SbC" secondAttribute="trailing" constant="28" id="A8X-2u-hCC"/>
+                <constraint firstItem="vHG-8S-Pyw" firstAttribute="height" secondItem="Xcf-Eb-SbC" secondAttribute="height" id="D9D-eZ-9oX"/>
+                <constraint firstItem="guv-ky-fdM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EKC-ne-TNK"/>
+                <constraint firstItem="uZ6-9v-t9g" firstAttribute="centerX" secondItem="vHG-8S-Pyw" secondAttribute="centerX" id="EU2-Tp-ooM"/>
+                <constraint firstItem="Xcf-Eb-SbC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="JL4-6e-qmI"/>
+                <constraint firstItem="APb-ci-LtF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JSg-28-FBe"/>
+                <constraint firstItem="APb-ci-LtF" firstAttribute="top" secondItem="dyt-Y2-gtL" secondAttribute="bottom" constant="32" id="LbC-yo-64l"/>
+                <constraint firstItem="Xcf-Eb-SbC" firstAttribute="top" secondItem="3H8-aY-XSa" secondAttribute="bottom" constant="50" id="NPJ-XT-han"/>
+                <constraint firstItem="VJ8-Y1-9dE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="Nvs-Px-qIn"/>
+                <constraint firstItem="dyt-Y2-gtL" firstAttribute="centerX" secondItem="a9b-Sm-w9h" secondAttribute="centerX" id="Y2U-hm-9pl"/>
+                <constraint firstItem="dyt-Y2-gtL" firstAttribute="top" secondItem="a9b-Sm-w9h" secondAttribute="bottom" constant="10" id="fZc-6N-vRr"/>
+                <constraint firstItem="ReK-Hz-6eo" firstAttribute="centerX" secondItem="Xcf-Eb-SbC" secondAttribute="centerX" id="ff9-x2-4Yd"/>
+                <constraint firstItem="guv-ky-fdM" firstAttribute="top" secondItem="iPf-mN-1zb" secondAttribute="bottom" constant="12" id="g9q-wJ-WZK"/>
+                <constraint firstAttribute="trailing" secondItem="iPf-mN-1zb" secondAttribute="trailing" constant="27" id="ixY-EK-ACb"/>
+                <constraint firstAttribute="bottom" secondItem="guv-ky-fdM" secondAttribute="bottom" constant="25" id="ja7-XC-BGx"/>
+                <constraint firstItem="ReK-Hz-6eo" firstAttribute="top" secondItem="Xcf-Eb-SbC" secondAttribute="bottom" constant="10" id="kE1-Pb-gfT"/>
+                <constraint firstItem="a9b-Sm-w9h" firstAttribute="width" secondItem="Xcf-Eb-SbC" secondAttribute="width" id="kVj-Fq-p0C"/>
+                <constraint firstAttribute="trailing" secondItem="vHG-8S-Pyw" secondAttribute="trailing" constant="28" id="mRc-1e-6Iy"/>
+                <constraint firstItem="vHG-8S-Pyw" firstAttribute="width" secondItem="Xcf-Eb-SbC" secondAttribute="width" id="ozo-Pw-Z2X"/>
+                <constraint firstItem="uZ6-9v-t9g" firstAttribute="top" secondItem="vHG-8S-Pyw" secondAttribute="bottom" constant="10" id="pFg-cm-Hft"/>
+                <constraint firstItem="a9b-Sm-w9h" firstAttribute="height" secondItem="Xcf-Eb-SbC" secondAttribute="height" id="pRn-Hh-fsa"/>
+                <constraint firstItem="QjQ-Ie-Fr8" firstAttribute="top" secondItem="APb-ci-LtF" secondAttribute="bottom" constant="8" id="t8L-E1-1YD"/>
+                <constraint firstItem="3H8-aY-XSa" firstAttribute="top" secondItem="VJ8-Y1-9dE" secondAttribute="bottom" constant="20" id="u2D-No-dWn"/>
+            </constraints>
+            <point key="canvasLocation" x="27.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="openingstage_Testbutton" width="320" height="40"/>
+        <image name="openingstage_closeEyesLogo" width="87" height="87"/>
+        <image name="openingstage_headLogo" width="87" height="87"/>
+        <image name="openingstage_openMouthLogo" width="87" height="87"/>
+        <image name="openingstage_scanningLogo" width="121" height="107"/>
+    </resources>
+</document>

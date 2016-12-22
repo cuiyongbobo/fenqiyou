@@ -57,7 +57,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-t3-WIO">
-                    <rect key="frame" x="27" y="576" width="320" height="40"/>
+                    <rect key="frame" x="27" y="575" width="321" height="40"/>
                     <state key="normal" backgroundImage="openingstage_ocr_confirm_normal"/>
                     <connections>
                         <action selector="handleDetermine:" destination="-1" eventType="touchUpInside" id="nCH-cy-alc"/>
@@ -113,16 +113,17 @@
                 <constraint firstItem="ukd-Vn-rHR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QOj-Nv-9fO"/>
                 <constraint firstItem="s69-79-XVn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SIK-hc-JqG"/>
                 <constraint firstItem="hVd-Wg-hAX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XSx-0c-mCX"/>
+                <constraint firstAttribute="trailing" secondItem="O0I-t3-WIO" secondAttribute="trailing" constant="27" id="ZEw-Cu-Sqw"/>
                 <constraint firstAttribute="trailing" secondItem="Yhf-bb-tMG" secondAttribute="trailing" constant="85" id="eQv-nG-reU"/>
                 <constraint firstItem="A6x-a4-SGb" firstAttribute="top" secondItem="QAF-9v-LvK" secondAttribute="bottom" constant="10" id="edj-cQ-c8H"/>
+                <constraint firstItem="O0I-t3-WIO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="gT1-LI-XqP"/>
                 <constraint firstItem="QAF-9v-LvK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="h8v-1m-vl7"/>
                 <constraint firstItem="13E-9I-GVT" firstAttribute="top" secondItem="Yhf-bb-tMG" secondAttribute="bottom" constant="10" id="kGo-7H-ULq"/>
                 <constraint firstItem="PKq-EA-j9V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lK3-az-xEX"/>
-                <constraint firstItem="O0I-t3-WIO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mrf-YX-yTk"/>
                 <constraint firstAttribute="bottom" secondItem="s69-79-XVn" secondAttribute="bottom" constant="25" id="oTf-Uh-q2Y"/>
                 <constraint firstAttribute="trailing" secondItem="ukd-Vn-rHR" secondAttribute="trailing" id="rRP-j6-sGt"/>
                 <constraint firstItem="13E-9I-GVT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yrF-Fj-2Hk"/>
-                <constraint firstItem="s69-79-XVn" firstAttribute="top" secondItem="O0I-t3-WIO" secondAttribute="bottom" constant="11" id="z07-t4-Bal"/>
+                <constraint firstItem="s69-79-XVn" firstAttribute="top" secondItem="O0I-t3-WIO" secondAttribute="bottom" constant="12" id="z07-t4-Bal"/>
             </constraints>
             <point key="canvasLocation" x="-157.5" y="-1323.5"/>
         </view>

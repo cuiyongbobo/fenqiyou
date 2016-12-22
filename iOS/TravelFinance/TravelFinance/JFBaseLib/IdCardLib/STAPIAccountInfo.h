@@ -10,7 +10,7 @@
 #define STAPIAccountInfo_h
 
 //#error 请将账户信息补全，然后删除此行。Fill in your account info below, and delete this line.
-#define ACCOUNT_API_ID (@"1bac2ddf9deb4a389d751ab9f374b59a")
-#define ACCOUNT_API_SECRET (@"6969bf68de994b3383943ad602d9c69c")
+//#define ACCOUNT_API_ID (@"在这里输入你的API_ID")
+//#define ACCOUNT_API_SECRET (@"在这里输入你的API_SECRET")
 
 #endif /* STAPIAccountInfo_h */

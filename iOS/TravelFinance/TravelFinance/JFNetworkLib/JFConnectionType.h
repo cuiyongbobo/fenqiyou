@@ -79,7 +79,7 @@ typedef NS_ENUM(NSUInteger, YKConnectionType) {
     
     JFConnectionTypeIDDisting            = 166,       /* 加息计划信息 */
     
-    YKConnectionTypeLoadAdvanceTurnOutInfo     = 167,       /* 提前转出详情 */
+    JFConnectionTypeFaceDetection     = 167,       /* 提前转出详情 */
     
     YKConnectionTypeLoadOrderAddRate           = 168,       /* 预约加息计划 */
     

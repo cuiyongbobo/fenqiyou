@@ -49,7 +49,7 @@ static NSString * const JFKSexSave = @"sex";
 
 static NSString * const KYKNetErrorMessage = @"您的网络信号不给力，请稍候重试。";
 
-static NSString * const JFKLoadingMessage = @"努力加载中..";
+static NSString * const JFKLoadingMessage = @"努力加载中...";
 
 static NSString * const JFKCreditAuthorization = @"CreditAuthorization";
 
