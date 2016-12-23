@@ -16,12 +16,15 @@
 #import "YKToastView.h"
 #import "JFTipsWindow.h"
 #import "NSString+Base64.h"
-#import "JFOpeningStageCertificationInstitutionViewController.h"
 #import "JFTipsWindow.h"
+#import "JFResultViewController.h"
+#import "JFMacro.h"
+#import "AppDelegate.h"
 
 @interface JFlivingDetectionViewController ()<STLivenessDetectorDelegate,UIAlertViewDelegate>
 
 @property (nonatomic , weak) STLivenessController *livenessVC;
+@property (nonatomic, strong) NSMutableArray *arrImage;
 
 @end
 
@@ -32,6 +35,9 @@
     // Do any additional setup after loading the view from its nib.
     
     [self configNavigation:@"人脸识别" showRightBtn:NO showLeftBtn:YES currentController:self];
+    
+    self.logoHeight.constant = 87*JFHeightRateScale;
+    //    self.arrImage = [[NSMutableArray alloc] init];
     
 }
 
@@ -61,15 +67,17 @@
             [arrImage addObject:stImage.image];
         }
         //        self.arrImage = arrImage;
-        if (arrImage.count) {
+        [self dismissViewControllerAnimated:YES completion:^{
             
             // 上传图片
-            
-            
             NSData * imageData = UIImageJPEGRepresentation(arrImage.firstObject,0.5);
+            float length = [imageData length]/1000;
+            NSLog(@"length= %f",length);
             NSString *imageDataStr = [NSString base64StringFromData:imageData length:[imageData length]];
+            
             YKToastView *toastView = [YKToastView sharedToastViewWWithIndicatorAndText:JFKLoadingMessage];
-            [toastView showInView:self.livenessVC.view];
+            [toastView showInView:self.view];
+            
             // 请求接口
             JFFaceDetectionBuilder *faceBuilder = [JFFaceDetectionBuilder sharedFace];
             [faceBuilder buildPostData:[[NSUserDefaults standardUserDefaults] objectForKey:JFKUserId] type:@"2" dataImageStr:imageDataStr];
@@ -77,10 +85,9 @@
             [afnet requestHttpDataWithPath:faceBuilder.requestURL params:faceBuilder.postData withMethodType:HttpRequestTypePost cacheSupport:NO delegate:self];
             afnet.connectionType = JFConnectionTypeFaceDetection;
             
-        }
+        }];
+        
     }
-    
-    //    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // 活体检测失败的回调 , 包括失败的类型 , 失败时检测类型 , 失败时检测类型所在检测序列中的位置 , 0 为第一个 .
@@ -248,10 +255,10 @@
     if (faceParser.code == [JFKStatusCode integerValue]) {
         
         // 去往认证机构
-        [self dismissViewControllerAnimated:YES completion:nil];
+        //        [self dismissViewControllerAnimated:YES completion:nil];
+        JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+        [self.navigationController pushViewController:resultController animated:YES];
         
-        JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
-        [self.navigationController pushViewController:bindingBankController animated:YES];
         
     }else {
         

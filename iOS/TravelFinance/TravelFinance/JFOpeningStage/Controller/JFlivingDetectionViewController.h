@@ -11,6 +11,10 @@
 #import "JFBaseViewController.h"
 
 @interface JFlivingDetectionViewController : JFBaseViewController
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoHeight;
+
+
+
 
 - (IBAction)handleFaceDetection:(id)sender;
 

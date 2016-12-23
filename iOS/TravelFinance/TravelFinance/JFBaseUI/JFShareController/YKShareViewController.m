@@ -96,6 +96,7 @@ NSUInteger const kYKShareHeight = 278;
     NSString *comUrl = @"http://guonei.news.baidu.com";
     
     
+    
     //    YKConfigMgr *config = [YKConfigMgr sharedYKConfigMgr];
     switch (shareType) {
         case ShareTypeWXSceneSession: //wx好友

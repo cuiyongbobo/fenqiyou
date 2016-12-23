@@ -17,6 +17,9 @@
 @property (nonatomic, strong) NSMutableDictionary *dicfrontRecogResult;
 @property (nonatomic, strong) NSMutableDictionary *dicbehindRecogResult;
 @property (weak, nonatomic) IBOutlet UIButton *uploadButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *frontHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *biendHeight;
+
 
 
 

@@ -16,7 +16,7 @@
 
 #import "JFOpeningStageBindingBankCardViewController.h"
 #import "JFOpeningStageCertificationInstitutionViewController.h"
-#import "JFResultViewController.h"
+#import "JFlivingDetectionViewController.h"
 
 
 @interface JFOpeningStageRealNameViewController ()<JFURLConnectionDelegate>
@@ -146,11 +146,8 @@
                 // 走业务
                 NSLog(@"走分期授权业务");
                 
-                //                JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
-                //                [self.navigationController pushViewController:bindingBankController animated:YES];
-                
-                JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
-                [self.navigationController pushViewController:resultController animated:YES];
+                JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
+                [self.navigationController pushViewController:livingContorller animated:YES];
                 
             }
             

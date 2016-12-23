@@ -18,6 +18,8 @@
 #import "JFTipsWindow.h"
 #import "NSString+Base64.h"
 #import "JFlivingDetectionViewController.h"
+#import "JFMacro.h"
+#import "JFOpeningStageCertificationInstitutionViewController.h"
 
 
 
@@ -52,6 +54,9 @@ typedef NS_OPTIONS(NSInteger, RecogResultType) {
     
     self.behindIDImageView.layer.cornerRadius = 4;
     self.behindIDImageView.layer.masksToBounds = YES;
+    
+    self.frontHeight.constant = 151*JFHeightRateScale;
+    self.biendHeight.constant = 151*JFHeightRateScale;
     
     
     UITapGestureRecognizer *frontTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scanFrontTap:)];
@@ -284,8 +289,8 @@ typedef NS_OPTIONS(NSInteger, RecogResultType) {
     
     if (bindingParser.code == [JFKStatusCode integerValue]) {
         
-        JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
-        [self.navigationController pushViewController:livingContorller animated:YES];
+        JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
+        [self.navigationController pushViewController:bindingBankController animated:YES];
         
     }else {
         

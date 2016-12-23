@@ -44,7 +44,7 @@
 #import "YKReachabilityMgr.h"
 #import "JFBaseLibCommon.h"
 #import "YKToastView.h"
-#import "JFResultViewController.h"
+#import "JFlivingDetectionViewController.h"
 
 
 @interface JFStagingTourViewController ()<UITableViewDataSource,UITableViewDelegate,JFURLConnectionDelegate,JFBaseTableViewCellDelegate>
@@ -109,6 +109,7 @@
             }
         }
     }
+    [self updateVersonfunc];
     
 }
 
@@ -187,8 +188,8 @@
     afnets.connectionType = JFConnectionTypestagingTourList;
     
     
-    JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
-    [self.navigationController pushViewController:resultController  animated:YES];
+    JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
+    [self.navigationController pushViewController:livingContorller animated:YES];
     
     
 }
@@ -675,8 +676,5 @@
             break;
     }
 }
-
-
-
 
 @end

@@ -12,7 +12,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 
-static NSString *const KJDistingRequestURL = @"http://192.168.40.230:8090/fqy_server/authentication/uploadFile";
+static NSString *const KJDistingRequestURL = @"http://139.129.237.13/fqy_server/authentication/uploadFile";
 
 @implementation JFOcrIDDistinguishBuilder
 

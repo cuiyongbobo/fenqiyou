@@ -28,9 +28,9 @@ static NSString *const KYKRootH5URLOnline = @"https://www.u9fenqiyou.cn";
 //
 //static NSString *const KYKRootH5URLDevelop = @"https://www.u9fenqiyou.cn";
 
-static NSString *const KYKRootURLDevelop = @"http://139.129.237.13/fqy_server";
+static NSString *const KYKRootURLDevelop = @"https://139.129.237.13/fqy_server";
 
-static NSString *const KYKRootH5URLDevelop = @"http://139.129.237.13/fqy/webapp";
+static NSString *const KYKRootH5URLDevelop = @"https://139.129.237.13/fqy/webapp";
 
 
 /**

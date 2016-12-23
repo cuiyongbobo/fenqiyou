@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFlivingDetectionViewController">
             <connections>
+                <outlet property="logoHeight" destination="I9i-pX-fdN" id="Dve-Zc-bY8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,6 +31,9 @@
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_closeEyesLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xcf-Eb-SbC">
                     <rect key="frame" x="28" y="245" width="87.5" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="I9i-pX-fdN"/>
+                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openingstage_openMouthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-Sm-w9h">
                     <rect key="frame" x="143.5" y="245" width="88" height="87"/>
