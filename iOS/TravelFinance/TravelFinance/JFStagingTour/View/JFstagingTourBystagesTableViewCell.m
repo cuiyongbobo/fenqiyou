@@ -70,7 +70,9 @@
     
     if ([self.delegate respondsToSelector:@selector(clickCell:tag:userinfo:)]) {
         
-        [self.delegate clickCell:self tag:JFTableCellClickTypefqGoodsDetails userinfo:self.fqGoodsItem.goodsUrl];
+//        [self.delegate clickCell:self tag:JFTableCellClickTypefqGoodsDetails userinfo:self.fqGoodsItem.goodsUrl];
+        
+         [self.delegate clickCell:self tag:JFTableCellClickTypefqGoodsDetails userinfo:self.fqGoodsItem];
     }
 }
 

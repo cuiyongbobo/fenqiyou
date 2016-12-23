@@ -35,10 +35,21 @@
     }];
     self.requestUrl = _requestUrl;
     if (self.isNotShowCloseBtn) {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:NO currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        }
+        
     }else {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:YES currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        }
+        
     }
+    
     
 }
 
@@ -54,9 +65,19 @@
     }
     
     if (self.isNotShowCloseBtn) {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:NO currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        }
+        
     }else {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:YES currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        }
+        
     }
 }
 
@@ -128,12 +149,21 @@
         [self.navigationController.navigationBar setHidden:NO];
         
         if (self.isNotShowCloseBtn) {
-            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+            if (self.isShare) {
+                [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:NO currentController:self];
+            }else {
+                [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+            }
+            
         }else {
-            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+            if (self.isShare) {
+                [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:YES currentController:self];
+            }else {
+                [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+            }
+            
         }
         
-        //        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
     }else {
         [self.navigationController.navigationBar setHidden:YES];
     }
@@ -190,6 +220,36 @@
 
 - (void)navigationRightHandleButtonEvent {
     NSLog(@"业务操作");
+    
+    //  分享代码
+    self.shareVC = [[YKShareViewController alloc] init];
+    NSString *shareLogoImageUrl = @"";
+    switch (self.shareTypeNumber) {
+        case activity: {
+            shareLogoImageUrl = @"activitylogo";
+        }
+            break;
+        case line: {
+            shareLogoImageUrl = @"linelogo";
+        }
+            break;
+        case payOrder: {
+            shareLogoImageUrl = @"payOrderlogo";
+        }
+            break;
+            
+        default:
+            break;
+    }
+    self.shareVC.params = @{@"title":self.commodityName,@"content":@"无限精彩，尽在分期游",@"imgUrl":shareLogoImageUrl,@"wxUrl":self.requestUrl,@"comUrl":self.requestUrl};
+    [[UIApplication sharedApplication].keyWindow addSubview:self.shareVC.view];
+    [self.shareVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.left.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.bottom.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.right.equalTo(self.shareVC.view.superview).with.offset(0);
+    }];
+
 }
 
 

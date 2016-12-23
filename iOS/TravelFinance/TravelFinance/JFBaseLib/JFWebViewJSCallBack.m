@@ -20,6 +20,8 @@
 #import "JFOpeningStageCertificationInstitutionViewController.h"
 #import "JFInputPhoneNumberViewController.h"
 #import "AppDelegate.h"
+#import "JFlivingDetectionViewController.h"
+#import "JFResultViewController.h"
 
 @interface JFWebViewJSCallBack ()
 
@@ -162,20 +164,34 @@ static JFWebViewJSCallBack *sharedWebViewJSCallBack = nil;
                 });
                 
             }else if([self.personItem.stageStep integerValue] == 1) {
+                
+                // 活体
+                JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
+                [_controller.navigationController pushViewController:livingContorller animated:YES];
+                
+            }else if ([self.personItem.stageStep integerValue] == 2) {
+                
+                // OCR
+                JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+                [_controller.navigationController pushViewController:resultController animated:YES];
+               
+                
+            }else if ([self.personItem.stageStep integerValue] == 3) {
+                
                 NSLog(@"去认证机构");
                 dispatch_async(dispatch_get_main_queue(), ^{
                     JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
                     [_controller.navigationController pushViewController:bindingBankController animated:YES];
                 });
                 
-            }else if ([self.personItem.stageStep integerValue] == 2) {
+            }else if ([self.personItem.stageStep integerValue] == 4) {
                 NSLog(@"去绑卡");
                 dispatch_async(dispatch_get_main_queue(), ^{
                     JFOpeningStageBindingBankCardViewController *bindingBankCardController = [[JFOpeningStageBindingBankCardViewController alloc] initWithNibName:@"JFOpeningStageBindingBankCardViewController" bundle:nil];
                     [_controller.navigationController pushViewController:bindingBankCardController animated:YES];
                 });
-                
-            }else if ([self.personItem.stageStep integerValue] == 10) {
+            }
+            else if ([self.personItem.stageStep integerValue] == 10) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // 下单接口
                     JFSubmitOrderViewController *orderController = [[JFSubmitOrderViewController alloc] initWithNibName:@"JFSubmitOrderViewController" bundle:nil];

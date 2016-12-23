@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFCouponViewController">
             <connections>
                 <outlet property="couponTableView" destination="lHP-ts-aC4" id="WIB-8n-KWA"/>
+                <outlet property="noDataView" destination="x53-7z-ZHT" id="eA4-yd-XDq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,16 +22,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-ts-aC4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x53-7z-ZHT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalInformation_norecord" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-nX-xGo">
+                            <rect key="frame" x="140.5" y="60.5" width="93" height="93"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-kX-82G">
+                            <rect key="frame" x="156.5" y="168.5" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Q6b-kX-82G" firstAttribute="centerX" secondItem="Ci2-nX-xGo" secondAttribute="centerX" id="bWI-Up-Jza"/>
+                        <constraint firstItem="Ci2-nX-xGo" firstAttribute="top" secondItem="x53-7z-ZHT" secondAttribute="top" constant="60.5" id="cSY-yT-hcQ"/>
+                        <constraint firstItem="Q6b-kX-82G" firstAttribute="top" secondItem="Ci2-nX-xGo" secondAttribute="bottom" constant="15" id="eDO-0s-KC0"/>
+                        <constraint firstItem="Ci2-nX-xGo" firstAttribute="centerX" secondItem="x53-7z-ZHT" secondAttribute="centerX" id="g3g-af-b2s"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="x53-7z-ZHT" secondAttribute="trailing" id="5PZ-PY-wUD"/>
                 <constraint firstItem="lHP-ts-aC4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KoS-Gn-NAT"/>
                 <constraint firstAttribute="bottom" secondItem="lHP-ts-aC4" secondAttribute="bottom" id="PKY-K2-7Ch"/>
+                <constraint firstItem="x53-7z-ZHT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wdc-Ja-crh"/>
+                <constraint firstAttribute="bottom" secondItem="x53-7z-ZHT" secondAttribute="bottom" id="jww-ab-BBS"/>
                 <constraint firstAttribute="trailing" secondItem="lHP-ts-aC4" secondAttribute="trailing" id="lOr-Y8-SVs"/>
+                <constraint firstItem="x53-7z-ZHT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="swf-PD-Znh"/>
                 <constraint firstItem="lHP-ts-aC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vee-fT-mKL"/>
             </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="personalInformation_norecord" width="93" height="93"/>
+    </resources>
 </document>

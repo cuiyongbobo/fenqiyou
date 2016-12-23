@@ -29,7 +29,6 @@
     // Do any additional setup after loading the view from its nib.
     
     [self.view addSubview:self.webView];
-    
     self.requestUrl = _requestUrl;
     
 }
@@ -46,9 +45,19 @@
     }
     
     if (self.isNotShowCloseBtn) {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:NO currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:NO currentController:self];
+        }
+        
     }else {
-        [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        if (self.isShare) {
+            [self configNavigation:self.titleName showRightBtn:YES showLeftBtn:YES currentController:self];
+        }else {
+            [self configNavigation:self.titleName showRightBtn:NO showLeftBtn:YES currentController:self];
+        }
+        
     }
     
 }
@@ -90,9 +99,19 @@
         [self.navigationController.navigationBar setHidden:NO];
         
         if (self.isNotShowCloseBtn) {
-            [self configNavigation:webView.title showRightBtn:NO showLeftBtn:NO currentController:self];
+            if (self.isShare) {
+                [self configNavigation:webView.title showRightBtn:YES showLeftBtn:NO currentController:self];
+            }else {
+                [self configNavigation:webView.title showRightBtn:NO showLeftBtn:NO currentController:self];
+            }
+            
         }else {
-            [self configNavigation:webView.title showRightBtn:NO showLeftBtn:YES currentController:self];
+            if (self.isShare) {
+                [self configNavigation:webView.title showRightBtn:YES showLeftBtn:YES currentController:self];
+            }else {
+                [self configNavigation:webView.title showRightBtn:NO showLeftBtn:YES currentController:self];
+            }
+            
         }
         
     }else {
@@ -210,6 +229,39 @@
 
 - (void)navigationRightHandleButtonEvent {
     NSLog(@"业务操作");
+    
+    //  分享代码
+    self.shareVC = [[YKShareViewController alloc] init];
+    NSString *shareLogoImageUrl = @"";
+    NSString *shareName = @"";
+    switch (self.shareTypeNumber) {
+        case activity: {
+            shareLogoImageUrl = @"activitylogo";
+            shareName = self.titleName;
+        }
+            break;
+        case line: {
+            shareLogoImageUrl = @"linelogo";
+            shareName = self.commodityName;
+        }
+            break;
+        case payOrder: {
+            shareLogoImageUrl = @"payOrderlogo";
+            shareName = self.titleName;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    self.shareVC.params = @{@"title":shareName,@"content":@"无限精彩，尽在分期游",@"imgUrl":shareLogoImageUrl,@"wxUrl":self.requestUrl,@"comUrl":self.requestUrl};
+    [[UIApplication sharedApplication].keyWindow addSubview:self.shareVC.view];
+    [self.shareVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.left.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.bottom.equalTo(self.shareVC.view.superview).with.offset(0);
+        make.right.equalTo(self.shareVC.view.superview).with.offset(0);
+    }];
 }
 
 

@@ -101,5 +101,12 @@ typedef NS_ENUM(NSInteger, JFTableCellClickType) {
     YKCellClickType6
 };
 
+typedef NS_ENUM(NSInteger, shareImageType) {
+    
+    activity = 0,
+    line = 1,
+    payOrder = 2
+};
+
 
 #endif /* JFMacro_h */

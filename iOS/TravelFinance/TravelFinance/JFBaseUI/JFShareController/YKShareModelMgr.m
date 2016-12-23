@@ -171,6 +171,21 @@
                     [WXApi sendReq:req];
                 }];
             }
+            else if([imageName hasPrefix:@"https"]){
+                [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:imageName] options:SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                    //
+                } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                    [message setThumbImage:image];
+                    WXWebpageObject *ext = [WXWebpageObject object];
+                    ext.webpageUrl = urlAdd;
+                    message.mediaObject = ext;
+                    SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
+                    req.bText = NO;
+                    req.message = message;
+                    req.scene = WXSceneSession;
+                    [WXApi sendReq:req];
+                }];
+            }
             else{
                 [message setThumbImage:[UIImage imageNamed:imageName]];
                 WXWebpageObject *ext = [WXWebpageObject object];

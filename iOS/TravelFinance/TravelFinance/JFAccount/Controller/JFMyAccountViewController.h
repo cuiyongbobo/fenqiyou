@@ -8,13 +8,12 @@
 
 #import "JFBaseViewController.h"
 
-#import "YKShareViewController.h"
+
 
 @interface JFMyAccountViewController : JFBaseViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *accountTableView;
 @property (weak, nonatomic) IBOutlet UIView *listView;
-@property (nonatomic, strong) YKShareViewController *shareVC;
 
 - (IBAction)handleSetup:(id)sender;
 - (IBAction)handleHelpCenter:(id)sender;

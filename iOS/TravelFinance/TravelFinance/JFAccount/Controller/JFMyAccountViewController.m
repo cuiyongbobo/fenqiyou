@@ -39,6 +39,8 @@
 #import "AFNetworking.h"
 #import "JFWKWebViewController.h"
 #import "YKToastView.h"
+#import "JFlivingDetectionViewController.h"
+#import "JFResultViewController.h"
 
 
 
@@ -125,17 +127,6 @@
         [[JFNetworkAFN sharedNetwork] requestHttpDataWithPath:accountBuilder.requestURL params:accountBuilder.postData withMethodType:HttpRequestTypePost cacheSupport:NO delegate:self];
         [JFNetworkAFN sharedNetwork].connectionType = JFConnectionTypePersonalCenter;
     }
-    
-    ///  分享代码
-    //        self.shareVC = [[YKShareViewController alloc] init];
-    //        self.shareVC.params = @{};
-    //        [[UIApplication sharedApplication].keyWindow addSubview:self.shareVC.view];
-    //        [self.shareVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-    //            make.top.equalTo(self.shareVC.view.superview).with.offset(0);
-    //            make.left.equalTo(self.shareVC.view.superview).with.offset(0);
-    //            make.bottom.equalTo(self.shareVC.view.superview).with.offset(0);
-    //            make.right.equalTo(self.shareVC.view.superview).with.offset(0);
-    //        }];
     
 }
 
@@ -489,7 +480,6 @@
                             
                         }
                         
-                        
                     }else if (indexPath.row == 3){
                         NSLog(@"立即还款");
                         if (SUPPORT_WKWEBVIEW) {
@@ -544,6 +534,17 @@
                         
                         
                     }else if([self.personalCenterItem.stageStep integerValue] == 1) {
+                        
+                        JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
+                        [self.navigationController pushViewController:livingContorller animated:YES];
+                        
+                    }else if ([self.personalCenterItem.stageStep integerValue] == 2) {
+                        
+                        // OCR
+                        JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+                        [self.navigationController pushViewController:resultController animated:YES];
+                        
+                    } else if ([self.personalCenterItem.stageStep integerValue] == 3) {
                         NSLog(@"去认证机构");
                         dispatch_async(dispatch_get_main_queue(), ^{
                             JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
@@ -551,14 +552,16 @@
                             
                         });
                         
-                    }else if ([self.personalCenterItem.stageStep integerValue] == 2) {
+                    }else if ([self.personalCenterItem.stageStep integerValue] == 4) {
                         NSLog(@"去绑卡");
                         dispatch_async(dispatch_get_main_queue(), ^{
                             JFOpeningStageBindingBankCardViewController *bindingBankCardController = [[JFOpeningStageBindingBankCardViewController alloc] initWithNibName:@"JFOpeningStageBindingBankCardViewController" bundle:nil];
                             [self.navigationController pushViewController:bindingBankCardController animated:YES];
                         });
                         
-                    }else if ([self.personalCenterItem.stageStep integerValue] == 10) {
+                    }
+                    
+                    else if ([self.personalCenterItem.stageStep integerValue] == 10) {
                         
                         // 去分期列表
                         JFPublicLineListViewController *lineListController = [[JFPublicLineListViewController alloc] initWithNibName:@"JFPublicLineListViewController" bundle:nil];

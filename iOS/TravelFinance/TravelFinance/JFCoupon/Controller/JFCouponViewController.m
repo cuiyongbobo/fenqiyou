@@ -12,6 +12,7 @@
 
 @interface JFCouponViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic, strong) NSMutableArray *dataList;
 @end
 
 @implementation JFCouponViewController
@@ -25,8 +26,14 @@
     self.couponTableView.dataSource = self;
     [self configNavigation:@"优惠券" showRightBtn:NO showLeftBtn:YES currentController:self];
     
+    self.dataList = [[NSMutableArray alloc] init];
+    
+    
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
 
 #pragma mark navigation back
 - (void)navigationGobackHandleButtonEvent {
@@ -48,7 +55,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    return 3;
+    return self.dataList.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

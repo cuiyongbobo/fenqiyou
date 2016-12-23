@@ -11,6 +11,8 @@
 @interface JFCouponViewController : JFBaseViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *couponTableView;
+@property (weak, nonatomic) IBOutlet UIView *noDataView;
+
 
 
 @end

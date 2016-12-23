@@ -28,7 +28,6 @@
 #import "MJRefresh.h"
 #import "JFPublicLineListViewController.h"
 #import "JFWebViewController.h"
-#import "JFStagingTourfqGoodsItem.h"
 #import "JFSubmitOrderViewController.h"
 #import "GestureViewController.h"
 #import "YKUpdateVersionViewController.h"
@@ -45,6 +44,7 @@
 #import "JFBaseLibCommon.h"
 #import "YKToastView.h"
 #import "JFlivingDetectionViewController.h"
+#import "JFStagingTourlistBwItem.h"
 
 
 @interface JFStagingTourViewController ()<UITableViewDataSource,UITableViewDelegate,JFURLConnectionDelegate,JFBaseTableViewCellDelegate>
@@ -188,8 +188,8 @@
     afnets.connectionType = JFConnectionTypestagingTourList;
     
     
-    JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
-    [self.navigationController pushViewController:livingContorller animated:YES];
+    //    JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
+    //    [self.navigationController pushViewController:livingContorller animated:YES];
     
     
 }
@@ -482,6 +482,9 @@
                 JFWKWebViewController *webViewController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
                 webViewController.requestUrl = fqGoodsItem.goodsUrl;
                 webViewController.isShowNavigation = YES;
+                webViewController.isShare = YES;
+                webViewController.commodityName = fqGoodsItem.pushName;
+                webViewController.shareTypeNumber = line;
                 webViewController.navigationItem.hidesBackButton = YES;
                 [self.navigationController pushViewController:webViewController animated:YES];
                 
@@ -490,6 +493,9 @@
                 JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
                 webViewController.requestUrl = fqGoodsItem.goodsUrl;
                 webViewController.isShowNavigation = YES;
+                webViewController.commodityName = fqGoodsItem.pushName;
+                webViewController.isShare = YES;
+                webViewController.shareTypeNumber = line;
                 webViewController.navigationItem.hidesBackButton = YES;
                 [self.navigationController pushViewController:webViewController animated:YES];
             }
@@ -602,24 +608,24 @@
         case JFTableCellClickTypefqGoodsDetails:
         {
             NSLog(@"商品详情");
-            
-            //            JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
-            //            webViewController.requestUrl = userinfo;
-            //            webViewController.isShowNavigation = YES;
-            //            webViewController.navigationItem.hidesBackButton = YES;
-            //            [self.navigationController pushViewController:webViewController animated:YES];
-            
+            JFStagingTourlistBwItem *listFreeItemm = (JFStagingTourlistBwItem *)userinfo;
             if (SUPPORT_WKWEBVIEW) {
                 JFWKWebViewController *webViewController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
-                webViewController.requestUrl = userinfo;
+                webViewController.requestUrl = listFreeItemm.goodsUrl;
                 webViewController.isShowNavigation = YES;
+                webViewController.isShare = YES;
+                webViewController.shareTypeNumber = line;
+                webViewController.commodityName = listFreeItemm.pushName;
                 webViewController.navigationItem.hidesBackButton = YES;
                 [self.navigationController pushViewController:webViewController animated:YES];
                 
             }else {
                 JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
-                webViewController.requestUrl = userinfo;
+                webViewController.requestUrl = listFreeItemm.goodsUrl;
                 webViewController.isShowNavigation = YES;
+                webViewController.isShare = YES;
+                webViewController.shareTypeNumber = line;
+                webViewController.commodityName = listFreeItemm.pushName;
                 webViewController.navigationItem.hidesBackButton = YES;
                 [self.navigationController pushViewController:webViewController animated:YES];
             }

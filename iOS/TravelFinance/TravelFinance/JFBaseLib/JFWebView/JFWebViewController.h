@@ -8,6 +8,10 @@
 
 #import "JFBaseViewController.h"
 
+#import "YKShareViewController.h"
+#import "JFMacro.h"
+
+
 @interface JFWebViewController : JFBaseViewController<UIWebViewDelegate>
 
 /* 加载的h5页面的链接URL */
@@ -19,5 +23,10 @@
 @property (nonatomic, strong) NSString *titleName;/* 导航标题，nil时 显示网页标题 */
 @property (nonatomic, assign) BOOL isShowNavigation;
 @property (nonatomic, assign) BOOL htmlSubmit;
+@property (nonatomic, assign) BOOL isShare;
+@property (nonatomic, strong) NSString *commodityName;
+@property (nonatomic, assign) shareImageType shareTypeNumber;
+
+@property (nonatomic, strong) YKShareViewController *shareVC;
 
 @end

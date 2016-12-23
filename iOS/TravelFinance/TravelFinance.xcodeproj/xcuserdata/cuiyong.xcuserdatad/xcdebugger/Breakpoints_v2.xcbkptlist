@@ -42,7 +42,7 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "504153431.462952"
+                  timestampString = "504181564.761975"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -57,7 +57,7 @@
                   moduleName = "TravelFinance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyong/Documents/sourceTree/iOS/TravelFinance/TravelFinance/JFStagingTour/View/JFstagingTourplayFreeTtemCodeView.m"
-                  timestampString = "504153431.464437"
+                  timestampString = "504181564.76343"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFAccount/Controller/JFMyAccountViewController.m"
-            timestampString = "503478595.625153"
+            timestampString = "504178941.072296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,7 +586,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareViewController.m"
-            timestampString = "504095541.913673"
+            timestampString = "504168327.261077"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -746,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "504092547.943307"
+            timestampString = "504174024.422086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "646"
-            endingLineNumber = "646"
+            startingLineNumber = "652"
+            endingLineNumber = "652"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -854,22 +854,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
-            timestampString = "504092547.943307"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "610"
-            endingLineNumber = "610"
-            landmarkName = "-clickCell:tag:userinfo:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -906,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFAccount/Controller/JFMyAccountViewController.m"
-            timestampString = "503478595.625153"
+            timestampString = "504178941.072296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "396"
-            endingLineNumber = "396"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -970,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFBaseLib/JFWebView/JFWebViewController.m"
-            timestampString = "503308387.64998"
+            timestampString = "504174024.422086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "-webViewDidStartLoad:"
             landmarkType = "7">
          </BreakpointContent>
@@ -986,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFBaseLib/JFWebView/JFWebViewController.m"
-            timestampString = "503316659.203389"
+            timestampString = "504174024.422086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "-setRequestUrl:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1034,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFBaseLib/JFWebView/JFWKWebViewController.m"
-            timestampString = "503567444.816278"
+            timestampString = "504168327.261077"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "-webView:didReceiveServerRedirectForProvisionalNavigation:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1082,11 +1066,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelFinance/JFBaseLib/JFWebView/JFWKWebViewController.m"
-            timestampString = "503567444.816278"
+            timestampString = "504168327.261077"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-webView:didCommitNavigation:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1168,6 +1152,134 @@
             startingLineNumber = "238"
             endingLineNumber = "238"
             landmarkName = "-jfURLConnection:withError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareViewController.m"
+            timestampString = "504154907.109116"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-shareButtonAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareModelMgr.m"
+            timestampString = "504155154.338164"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "+registeShareOfType:AndAppID:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareModelMgr.m"
+            timestampString = "504156439.908149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "+sendLinkTitle:description:ImageName:URLAdd:Type:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareModelMgr.m"
+            timestampString = "504156556.463336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "+sendLinkTitle:description:ImageName:URLAdd:Type:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseUI/JFShareController/YKShareViewController.m"
+            timestampString = "504156595.501128"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-shareButtonAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFBaseLib/JFWebView/JFWKWebViewController.m"
+            timestampString = "504175057.156496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "-navigationRightHandleButtonEvent"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
+            timestampString = "504180782.333355"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "568"
+            endingLineNumber = "568"
+            landmarkName = "-clickCell:tag:userinfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelFinance/JFStagingTour/Controller/JFStagingTourViewController.m"
+            timestampString = "504181543.960204"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "610"
+            endingLineNumber = "610"
+            landmarkName = "-clickCell:tag:userinfo:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -83,19 +83,19 @@ NSUInteger const kYKShareHeight = 278;
     self.bottomBgView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, kYKShareHeight);
     [self delayMethod];
     
-//    NSString *wxUrl = self.params[@"share"][@"wxUrl"];
-//    NSString *imgUrl = self.params[@"share"][@"picUrl"];
-//    NSString *content = self.params[@"share"][@"content"];
-//    NSString *title = self.params[@"share"][@"title"];
-//    NSString *comUrl = self.params[@"share"][@"comUrl"];
-    
-    NSString *wxUrl = @"http://guonei.news.baidu.com";
-    NSString *imgUrl = @"http://img4.duitang.com/uploads/item/201510/06/20151006220022_whFLZ.thumb.224_0.jpeg";
-    NSString *content = @"理财有风险，投资需谨慎";
-    NSString *title = @"优玖分期游";
-    NSString *comUrl = @"http://guonei.news.baidu.com";
+    NSString *wxUrl = self.params[@"wxUrl"];
+    NSString *imgUrl = self.params[@"imgUrl"];
+    NSString *content = self.params[@"content"];
+    NSString *title = self.params[@"title"];
+    NSString *comUrl = self.params[@"wxUrl"];
     
     
+    //    NSString *wxUrl = @"http://guonei.news.baidu.com";
+    //    NSString *imgUrl = @"http://img4.duitang.com/uploads/item/201510/06/20151006220022_whFLZ.thumb.224_0.jpeg";
+    //    //    NSString *imgUrl = @"http://az608707.vo.msecnd.net/files/VelikoTarnovo_EN-US12075217820_1920x1200.jpg";
+    //    NSString *content = @"理财有风险，投资需谨慎";
+    //    NSString *title = @"优玖分期游";
+    //    NSString *comUrl = @"http://guonei.news.baidu.com";
     
     //    YKConfigMgr *config = [YKConfigMgr sharedYKConfigMgr];
     switch (shareType) {

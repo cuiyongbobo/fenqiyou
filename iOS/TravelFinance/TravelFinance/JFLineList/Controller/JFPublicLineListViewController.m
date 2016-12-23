@@ -206,12 +206,18 @@
         if (SUPPORT_WKWEBVIEW) {
             JFWKWebViewController *webViewController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
             webViewController.isShowNavigation = YES;
+            webViewController.isShare = YES;
+            webViewController.shareTypeNumber = line;
             webViewController.requestUrl = fqGoodsItem.goodsUrl;
+            webViewController.commodityName = fqGoodsItem.pushName;
             webViewController.navigationItem.hidesBackButton = YES;
             [self.navigationController pushViewController:webViewController animated:YES];
         }else {
             JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
             webViewController.isShowNavigation = YES;
+            webViewController.isShare = YES;
+            webViewController.shareTypeNumber = line;
+            webViewController.commodityName = fqGoodsItem.pushName;
             webViewController.requestUrl = fqGoodsItem.goodsUrl;
             webViewController.navigationItem.hidesBackButton = YES;
             [self.navigationController pushViewController:webViewController animated:YES];

@@ -18,6 +18,7 @@
 #import "JFMacro.h"
 #import "JFWKWebViewController.h"
 #import "JFBaseLibCommon.h"
+#import "JFWebViewController.h"
 
 
 @interface JFNotLoginMyAccountViewController ()<UITableViewDataSource,UITableViewDelegate,JFBaseTableViewCellDelegate>
@@ -131,29 +132,63 @@
             {
                 [MobClick event:@"mycenter_banner1"];//个人中心未登录页面banner1点击数
                 
-                JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
-                NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
                 
-                payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
-                payWebController.htmlSubmit =NO;
-                payWebController.isShowNavigation = YES;
-                payWebController.navigationItem.hidesBackButton = YES;
-                [self.navigationController pushViewController:payWebController animated:YES];
+                
+                
+                if (SUPPORT_WKWEBVIEW) {
+                    JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
+                    NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
+                    
+                    payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
+                    payWebController.htmlSubmit =NO;
+                    payWebController.isShare = YES;
+                    payWebController.shareTypeNumber = activity;
+                    payWebController.isShowNavigation = YES;
+                    payWebController.navigationItem.hidesBackButton = YES;
+                    [self.navigationController pushViewController:payWebController animated:YES];
+                    
+                }else {
+                    
+                    JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
+                    webViewController.htmlSubmit =NO;
+                    webViewController.isShowNavigation = YES;
+                    webViewController.isShare = YES;
+                    webViewController.shareTypeNumber = activity;
+                    webViewController.navigationItem.hidesBackButton = YES;
+                    [self.navigationController pushViewController:webViewController animated:YES];
+                }
+                
             }
                 break;
             case 1:
             {
                 [MobClick event:@"mycenter_banner2"];//个人中心未登录页面banner2点击数
                 
-                JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
-                NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
                 
-                payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
-                payWebController.htmlSubmit =NO;
-                payWebController.isShowNavigation = YES;
-                payWebController.navigationItem.hidesBackButton = YES;
-                [self.navigationController pushViewController:payWebController animated:YES];
-                
+                if (SUPPORT_WKWEBVIEW) {
+                    
+                    JFWKWebViewController *payWebController = [[JFWKWebViewController alloc] initWithNibName:@"JFWKWebViewController" bundle:nil];
+                    NSString *notLoginBannerRequestURL = [NSString stringWithFormat:@"/app/activityBanner?code=%ld",(long)(indexPath.row+1)];
+                    
+                    payWebController.requestUrl = [[JFBaseLibCommon baseH5URL] stringByAppendingString:notLoginBannerRequestURL];
+                    payWebController.htmlSubmit =NO;
+                    payWebController.isShare = YES;
+                    payWebController.shareTypeNumber = activity;
+                    payWebController.isShowNavigation = YES;
+                    payWebController.navigationItem.hidesBackButton = YES;
+                    [self.navigationController pushViewController:payWebController animated:YES];
+                    
+                }else {
+                    
+                    JFWebViewController *webViewController = [[JFWebViewController alloc] initWithNibName:@"JFWebViewController" bundle:nil];
+                    webViewController.htmlSubmit =NO;
+                    webViewController.isShowNavigation = YES;
+                    webViewController.isShare = YES;
+                    webViewController.shareTypeNumber = activity;
+                    webViewController.navigationItem.hidesBackButton = YES;
+                    [self.navigationController pushViewController:webViewController animated:YES];
+                    
+                }
             }
                 break;
                 
@@ -166,11 +201,6 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 205*JFHeightRateScale;
-    //    if (indexPath.section == 0) {
-    //        return (194*JFHeightRateScale);
-    //    }else {
-    //        return (194*JFHeightRateScale);
-    //    }
 }
 
 // 设置组的高度

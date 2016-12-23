@@ -83,6 +83,9 @@
 		D723BBA91E094BE9009703E9 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA41E094BE9009703E9 /* AESCrypt.m */; };
 		D723BBAA1E094BE9009703E9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA61E094BE9009703E9 /* NSData+Base64.m */; };
 		D723BBAB1E094BE9009703E9 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BBA81E094BE9009703E9 /* NSString+Base64.m */; };
+		D72469A31E0D1E59005DE332 /* activitylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D72469A01E0D1E59005DE332 /* activitylogo.png */; };
+		D72469A41E0D1E59005DE332 /* linelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D72469A11E0D1E59005DE332 /* linelogo.png */; };
+		D72469A51E0D1E59005DE332 /* payOrderlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D72469A21E0D1E59005DE332 /* payOrderlogo.png */; };
 		D72FB2B11E0B6D4A0087BADF /* idcard.model in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2AA1E0B6D4A0087BADF /* idcard.model */; };
 		D72FB2B21E0B6D4A0087BADF /* lib_st_card_scanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72FB2AB1E0B6D4A0087BADF /* lib_st_card_scanner.a */; };
 		D72FB2B31E0B6D4A0087BADF /* OCR_SDK_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D72FB2AC1E0B6D4A0087BADF /* OCR_SDK_Resource.bundle */; };
@@ -563,6 +566,9 @@
 		D723BBA61E094BE9009703E9 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		D723BBA71E094BE9009703E9 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		D723BBA81E094BE9009703E9 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		D72469A01E0D1E59005DE332 /* activitylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitylogo.png; sourceTree = "<group>"; };
+		D72469A11E0D1E59005DE332 /* linelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linelogo.png; sourceTree = "<group>"; };
+		D72469A21E0D1E59005DE332 /* payOrderlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payOrderlogo.png; sourceTree = "<group>"; };
 		D72FB2AA1E0B6D4A0087BADF /* idcard.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = idcard.model; sourceTree = "<group>"; };
 		D72FB2AB1E0B6D4A0087BADF /* lib_st_card_scanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib_st_card_scanner.a; sourceTree = "<group>"; };
 		D72FB2AC1E0B6D4A0087BADF /* OCR_SDK_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OCR_SDK_Resource.bundle; sourceTree = "<group>"; };
@@ -1250,6 +1256,16 @@
 				D723BBA81E094BE9009703E9 /* NSString+Base64.m */,
 			);
 			path = crypt;
+			sourceTree = "<group>";
+		};
+		D724699F1E0D1E59005DE332 /* shareLogo */ = {
+			isa = PBXGroup;
+			children = (
+				D72469A01E0D1E59005DE332 /* activitylogo.png */,
+				D72469A11E0D1E59005DE332 /* linelogo.png */,
+				D72469A21E0D1E59005DE332 /* payOrderlogo.png */,
+			);
+			path = shareLogo;
 			sourceTree = "<group>";
 		};
 		D72FB2A91E0B6D4A0087BADF /* IdCardLib */ = {
@@ -2577,6 +2593,7 @@
 		D7D86FD11DED183100651843 /* JFShareController */ = {
 			isa = PBXGroup;
 			children = (
+				D724699F1E0D1E59005DE332 /* shareLogo */,
 				D7D86FD21DED184100651843 /* YKShareViewController.h */,
 				D7D86FD31DED184100651843 /* YKShareViewController.m */,
 				D7D86FD41DED184100651843 /* YKShareViewController.xib */,
@@ -2830,6 +2847,7 @@
 				D763C4061DF54810005E3B02 /* ICBC@3x.png in Resources */,
 				D7E7585B1DD073D90063F9C9 /* JFsubmitOrderstagesInformationTableViewCell.xib in Resources */,
 				D763C4011DF54810005E3B02 /* GDB@2x.png in Resources */,
+				D72469A31E0D1E59005DE332 /* activitylogo.png in Resources */,
 				D763C3EA1DF54810005E3B02 /* BOB@3x.png in Resources */,
 				D763C4051DF54810005E3B02 /* ICBC@2x.png in Resources */,
 				D7B404C81DDC66E100A6C30B /* JFOpeningStageRealNameViewController.xib in Resources */,
@@ -2952,10 +2970,12 @@
 				D79F856C1DE41999006BAC07 /* JFGuideViewController.xib in Resources */,
 				D715C8651DD9544A0038197D /* JFNotLoginMyAccountViewController.xib in Resources */,
 				D734B57B1DD85D58008340BE /* JFAccountAvailableCreditTableViewCell.xib in Resources */,
+				D72469A51E0D1E59005DE332 /* payOrderlogo.png in Resources */,
 				D763C4081DF54810005E3B02 /* PAB@3x.png in Resources */,
 				D7E758601DD0AA210063F9C9 /* JFsubmitOrderTravelInformationTableViewCell.xib in Resources */,
 				D763C3F81DF54810005E3B02 /* CIB@3x.png in Resources */,
 				D763C3F11DF54810005E3B02 /* BOSH@2x.png in Resources */,
+				D72469A41E0D1E59005DE332 /* linelogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,7 +54,7 @@
     if (self.freeItemViewModelArray.count > index) {
         JFStagingTourlistBwItem *listFreeItem = self.freeItemViewModelArray[index];
         if ([self.delegate respondsToSelector:@selector(clickCell:tag:userinfo:)]) {
-            [self.delegate clickCell:self tag:JFTableCellClickTypefqGoodsDetails userinfo:listFreeItem.goodsUrl];
+            [self.delegate clickCell:self tag:JFTableCellClickTypefqGoodsDetails userinfo:listFreeItem];
         }
     }
 }
