@@ -281,7 +281,6 @@ typedef NS_OPTIONS(NSInteger, RecogResultType) {
     }
 }
 
-
 - (void)handleDistingResponse:(NSDictionary *)dictionary {
     NSLog(@"dic =%@",dictionary);
     JFOcrIDDistinguishParser *bindingParser = [JFOcrIDDistinguishParser sharedDistingParser];
@@ -289,8 +288,13 @@ typedef NS_OPTIONS(NSInteger, RecogResultType) {
     
     if (bindingParser.code == [JFKStatusCode integerValue]) {
         
-        JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
-        [self.navigationController pushViewController:bindingBankController animated:YES];
+        if ([bindingParser.sourceDictionary[@"code"] integerValue]== 1) {
+            
+            JFOpeningStageCertificationInstitutionViewController *bindingBankController = [[JFOpeningStageCertificationInstitutionViewController alloc] initWithNibName:@"JFOpeningStageCertificationInstitutionViewController" bundle:nil];
+            [self.navigationController pushViewController:bindingBankController animated:YES];
+        }else {
+            [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:bindingParser.sourceDictionary[@"msg"] backgroundcolor:white];
+        }
         
     }else {
         

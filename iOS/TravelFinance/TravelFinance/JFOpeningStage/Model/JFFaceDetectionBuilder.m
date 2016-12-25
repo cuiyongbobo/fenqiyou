@@ -12,7 +12,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 
-static NSString *const KJFaceRequestURL = @"http://139.129.237.13/fqy_server/authentication/uploadFile";
+static NSString *const KJFaceRequestURL = @"/authentication/uploadFile";
 
 
 @implementation JFFaceDetectionBuilder
@@ -35,8 +35,7 @@ static NSString *const KJFaceRequestURL = @"http://139.129.237.13/fqy_server/aut
     [paramDict setAllObject:type forKey:@"type"];
     [paramDict setAllObject:dataImageStr forKey:@"faceImg"];
     self.postData = paramDict;
-//    self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJFaceRequestURL];
-    self.requestURL = KJFaceRequestURL;
+    self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJFaceRequestURL];
     
 }
 

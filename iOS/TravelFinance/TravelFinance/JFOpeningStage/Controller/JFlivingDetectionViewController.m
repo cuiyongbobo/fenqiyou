@@ -80,7 +80,7 @@
             
             // 请求接口
             JFFaceDetectionBuilder *faceBuilder = [JFFaceDetectionBuilder sharedFace];
-            [faceBuilder buildPostData:[[NSUserDefaults standardUserDefaults] objectForKey:JFKUserId] type:@"2" dataImageStr:imageDataStr];
+            [faceBuilder buildPostData:[[NSUserDefaults standardUserDefaults] objectForKey:JFKUserId] type:@"1" dataImageStr:imageDataStr];
             JFNetworkAFN *afnet = [[JFNetworkAFN alloc] init];
             [afnet requestHttpDataWithPath:faceBuilder.requestURL params:faceBuilder.postData withMethodType:HttpRequestTypePost cacheSupport:NO delegate:self];
             afnet.connectionType = JFConnectionTypeFaceDetection;
@@ -254,16 +254,21 @@
     
     if (faceParser.code == [JFKStatusCode integerValue]) {
         
-        // 去往认证机构
-        //        [self dismissViewControllerAnimated:YES completion:nil];
-        JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
-        [self.navigationController pushViewController:resultController animated:YES];
-        
+        if ([faceParser.sourceDictionary[@"code"] integerValue] == 1) {
+            
+            // 去往认证机构
+            //        [self dismissViewControllerAnimated:YES completion:nil];
+            JFResultViewController *resultController = [[JFResultViewController alloc] initWithNibName:@"JFResultViewController" bundle:nil];
+            [self.navigationController pushViewController:resultController animated:YES];
+        }else {
+            
+            [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:faceParser.sourceDictionary[@"msg"] backgroundcolor:white];
+        }
         
     }else {
         
         NSLog(@"errorMessage =%@",faceParser.message);
-        [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:faceParser.message backgroundcolor:black];
+        [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:faceParser.message backgroundcolor:white];
     }
 }
 

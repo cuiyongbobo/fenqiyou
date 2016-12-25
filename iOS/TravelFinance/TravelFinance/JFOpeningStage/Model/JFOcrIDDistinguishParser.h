@@ -10,6 +10,8 @@
 
 @interface JFOcrIDDistinguishParser : JFJsonParser
 
+@property (nonatomic, strong) NSMutableDictionary *sourceDictionary;
+
 + (instancetype)sharedDistingParser;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface JFFaceDetectionParser : JFJsonParser
 
+@property (nonatomic, strong) NSMutableDictionary *sourceDictionary;
+
 + (instancetype)sharedFaceParser;
 
 @end

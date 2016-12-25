@@ -30,6 +30,7 @@
     
     if ([jsonData isKindOfClass:[NSDictionary class]]) {
         
+        self.sourceDictionary = jsonData;
         
     }
 }

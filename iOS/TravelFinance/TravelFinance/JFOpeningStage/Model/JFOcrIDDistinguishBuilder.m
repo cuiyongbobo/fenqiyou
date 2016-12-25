@@ -12,7 +12,7 @@
 #import "JFBaseLibCommon.h"
 #import "JFString.h"
 
-static NSString *const KJDistingRequestURL = @"http://139.129.237.13/fqy_server/authentication/uploadFile";
+static NSString *const KJDistingRequestURL = @"/authentication/uploadFile";
 
 @implementation JFOcrIDDistinguishBuilder
 
@@ -43,8 +43,7 @@ static NSString *const KJDistingRequestURL = @"http://139.129.237.13/fqy_server/
     [paramDict setAllObject:dataDict[@"organization"] forKey:@"organization"];
     [paramDict setAllObject:dataDict[@"validityDate"] forKey:@"validityDate"];
     self.postData = paramDict;
-    self.requestURL = KJDistingRequestURL;
-//    [[JFBaseLibCommon baseURL] stringByAppendingString:KJDistingRequestURL];
+    self.requestURL = [[JFBaseLibCommon baseURL] stringByAppendingString:KJDistingRequestURL];
 }
 
 @end

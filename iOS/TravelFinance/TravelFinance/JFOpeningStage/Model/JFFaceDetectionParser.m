@@ -29,8 +29,7 @@
 - (void)parseData:(id)jsonData {
     
     if ([jsonData isKindOfClass:[NSDictionary class]]) {
-        
-        
+        self.sourceDictionary = jsonData;
     }
 }
 
