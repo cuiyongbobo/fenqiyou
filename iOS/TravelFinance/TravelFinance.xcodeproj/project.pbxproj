@@ -273,6 +273,7 @@
 		D78416D21DCDE75C007A1530 /* JFWKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78416D01DCDE75C007A1530 /* JFWKWebViewController.xib */; };
 		D792E7F41DF981A600F6A493 /* YKReachabilityMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D792E7F31DF981A600F6A493 /* YKReachabilityMgr.m */; };
 		D792E7F71DF9825200F6A493 /* YKReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D792E7F61DF9825200F6A493 /* YKReachability.m */; };
+		D79CF2321E10EE3300837CF6 /* SYMPhoneInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = D79CF2311E10EE3300837CF6 /* SYMPhoneInformation.m */; };
 		D79E17B51DC6E1E2002A8560 /* JFStagingTourParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E17B41DC6E1E2002A8560 /* JFStagingTourParser.m */; };
 		D79E17B81DC6E1F8002A8560 /* JFStagingTourListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E17B71DC6E1F8002A8560 /* JFStagingTourListParser.m */; };
 		D79E17BC1DC6E5DC002A8560 /* JFStagingTourBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E17BB1DC6E5DC002A8560 /* JFStagingTourBannerItem.m */; };
@@ -874,6 +875,8 @@
 		D792E7F31DF981A600F6A493 /* YKReachabilityMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKReachabilityMgr.m; sourceTree = "<group>"; };
 		D792E7F51DF9825200F6A493 /* YKReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKReachability.h; sourceTree = "<group>"; };
 		D792E7F61DF9825200F6A493 /* YKReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKReachability.m; sourceTree = "<group>"; };
+		D79CF2301E10EE3300837CF6 /* SYMPhoneInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMPhoneInformation.h; sourceTree = "<group>"; };
+		D79CF2311E10EE3300837CF6 /* SYMPhoneInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMPhoneInformation.m; sourceTree = "<group>"; };
 		D79E17B31DC6E1E2002A8560 /* JFStagingTourParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFStagingTourParser.h; sourceTree = "<group>"; };
 		D79E17B41DC6E1E2002A8560 /* JFStagingTourParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFStagingTourParser.m; sourceTree = "<group>"; };
 		D79E17B61DC6E1F8002A8560 /* JFStagingTourListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFStagingTourListParser.h; sourceTree = "<group>"; };
@@ -2186,6 +2189,8 @@
 				D792E7F61DF9825200F6A493 /* YKReachability.m */,
 				D71227791E014E4C00E24C71 /* MyScrollView.h */,
 				D712277A1E014E4C00E24C71 /* MyScrollView.m */,
+				D79CF2301E10EE3300837CF6 /* SYMPhoneInformation.h */,
+				D79CF2311E10EE3300837CF6 /* SYMPhoneInformation.m */,
 			);
 			path = JFBaseLib;
 			sourceTree = "<group>";
@@ -3062,6 +3067,7 @@
 				D751D5B11DED88FC00147EC3 /* MJRefreshBackStateFooter.m in Sources */,
 				D7140BB61DD5ECDF000D4A63 /* JFBankListModel.m in Sources */,
 				D7A745341DE29ADC00835596 /* JFPersonalInformationBuilder.m in Sources */,
+				D79CF2321E10EE3300837CF6 /* SYMPhoneInformation.m in Sources */,
 				D79F85911DE4211E006BAC07 /* UIImage+Custom.m in Sources */,
 				D751D5AC1DED88FC00147EC3 /* MJRefreshAutoGifFooter.m in Sources */,
 				D7B4A9F41DBC6E7A00D38CC9 /* JFBaseLibCommon.m in Sources */,
