@@ -235,6 +235,7 @@
 		D763C4101DF54B6C005E3B02 /* CGB@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D763C40E1DF54B6C005E3B02 /* CGB@3x.png */; };
 		D766E6C41E00DE1600A08499 /* JFPullBankInformationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D766E6C31E00DE1600A08499 /* JFPullBankInformationBuilder.m */; };
 		D766E6C71E00DE3000A08499 /* JFPullBankInformationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D766E6C61E00DE3000A08499 /* JFPullBankInformationParser.m */; };
+		D7779F341E11282D0059C1C2 /* FDDemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7779F331E11282D0059C1C2 /* FDDemoScrollView.m */; };
 		D77CAF081E03C317008ACE0F /* guide_0@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D77CAEF81E03C317008ACE0F /* guide_0@2x.jpg */; };
 		D77CAF091E03C317008ACE0F /* guide_0~1136h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D77CAEF91E03C317008ACE0F /* guide_0~1136h.jpg */; };
 		D77CAF0A1E03C317008ACE0F /* guide_0~1334h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D77CAEFA1E03C317008ACE0F /* guide_0~1334h.jpg */; };
@@ -814,6 +815,8 @@
 		D766E6C31E00DE1600A08499 /* JFPullBankInformationBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPullBankInformationBuilder.m; sourceTree = "<group>"; };
 		D766E6C51E00DE3000A08499 /* JFPullBankInformationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPullBankInformationParser.h; sourceTree = "<group>"; };
 		D766E6C61E00DE3000A08499 /* JFPullBankInformationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPullBankInformationParser.m; sourceTree = "<group>"; };
+		D7779F321E11282D0059C1C2 /* FDDemoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDemoScrollView.h; sourceTree = "<group>"; };
+		D7779F331E11282D0059C1C2 /* FDDemoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDemoScrollView.m; sourceTree = "<group>"; };
 		D77CAEF81E03C317008ACE0F /* guide_0@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "guide_0@2x.jpg"; sourceTree = "<group>"; };
 		D77CAEF91E03C317008ACE0F /* guide_0~1136h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "guide_0~1136h.jpg"; sourceTree = "<group>"; };
 		D77CAEFA1E03C317008ACE0F /* guide_0~1334h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "guide_0~1334h.jpg"; sourceTree = "<group>"; };
@@ -2412,6 +2415,8 @@
 			children = (
 				D7C9D7171DBDA977004DC9EA /* JFBaseViewController.h */,
 				D7C9D7181DBDA977004DC9EA /* JFBaseViewController.m */,
+				D7779F321E11282D0059C1C2 /* FDDemoScrollView.h */,
+				D7779F331E11282D0059C1C2 /* FDDemoScrollView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3066,6 +3071,7 @@
 				D7066FAA1DC2E95400ED7BBA /* JFSendCodeBuilder.m in Sources */,
 				D751D5B11DED88FC00147EC3 /* MJRefreshBackStateFooter.m in Sources */,
 				D7140BB61DD5ECDF000D4A63 /* JFBankListModel.m in Sources */,
+				D7779F341E11282D0059C1C2 /* FDDemoScrollView.m in Sources */,
 				D7A745341DE29ADC00835596 /* JFPersonalInformationBuilder.m in Sources */,
 				D79CF2321E10EE3300837CF6 /* SYMPhoneInformation.m in Sources */,
 				D79F85911DE4211E006BAC07 /* UIImage+Custom.m in Sources */,

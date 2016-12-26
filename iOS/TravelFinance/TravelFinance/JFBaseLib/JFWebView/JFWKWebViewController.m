@@ -36,7 +36,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     if (self.isShowNavigation) {
         [self.navigationController.navigationBar setHidden:NO];

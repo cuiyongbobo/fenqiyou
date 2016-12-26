@@ -13,7 +13,7 @@
 #import "UIColor+Hex.h"
 
 
-@interface JFNavigationController ()
+@interface JFNavigationController ()<UIGestureRecognizerDelegate>
 //<UIGestureRecognizerDelegate>
 @end
 
@@ -37,12 +37,6 @@
     
 }
 
-//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-//    if (self.viewControllers.count <= 1 ) {
-//        return NO;
-//    }
-//    return YES;
-//}
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     

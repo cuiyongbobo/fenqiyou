@@ -147,6 +147,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
     self.bannerItemArrayList = [[NSMutableArray alloc] init];
     self.subjectItemArrayList = [[NSMutableArray alloc] init];
     self.bwItemArrayList = [[NSMutableArray alloc] init];
@@ -154,11 +157,7 @@
     self.stagingTourSelectItemArrayList = [[NSMutableArray alloc] init];
     self.pageNumberTag = 1;
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
     if ([JFBaseLibCommon checkNetStatusNotReachable]) {
-        
         
         [[JFTipsWindow sharedTipview] HiddenTipView:NO viewcontroller:self tiptext:KYKNetErrorMessage backgroundcolor:white];
         return;
@@ -191,15 +190,14 @@
     //    JFlivingDetectionViewController *livingContorller = [[JFlivingDetectionViewController alloc] initWithNibName:@"JFlivingDetectionViewController" bundle:nil];
     //    [self.navigationController pushViewController:livingContorller animated:YES];
     
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;    //让rootView禁止滑动
     }
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

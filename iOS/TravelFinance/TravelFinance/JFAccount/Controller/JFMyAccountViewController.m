@@ -92,6 +92,7 @@
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;    //让rootView禁止滑动
+//        self.fd_interactivePopDisabled = YES;
     }
 }
 

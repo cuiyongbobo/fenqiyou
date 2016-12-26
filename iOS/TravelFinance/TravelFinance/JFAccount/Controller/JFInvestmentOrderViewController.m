@@ -60,6 +60,8 @@
     
 }
 
+
+
 #pragma mark responce Evne
 
 - (void)jfURLConnection:(JFNetworkAFN *)jfURLConnection withError:(id)error {

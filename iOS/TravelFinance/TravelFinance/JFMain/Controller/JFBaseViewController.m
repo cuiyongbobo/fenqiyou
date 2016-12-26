@@ -29,16 +29,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
         self.navigationController.interactivePopGestureRecognizer.delegate = self;
     }
+    
 }
+
+
 
 - (void)configNavigation:(NSString *)navigationTitile showRightBtn:(BOOL)show showLeftBtn:(BOOL)showBtn currentController:(UIViewController *) controller {
     
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
     _TitleImage=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 30)];
     //    _TitleImage.image=[UIImage imageNamed:@""];
     controller.navigationItem.titleView=_TitleImage;
