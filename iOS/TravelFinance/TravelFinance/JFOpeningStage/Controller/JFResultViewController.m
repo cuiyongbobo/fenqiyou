@@ -71,6 +71,16 @@ typedef NS_OPTIONS(NSInteger, RecogResultType) {
     
 }
 
+#pragma mark navigation back
+- (void)navigationGobackHandleButtonEvent {
+    NSLog(@"go back");
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)navigationRightHandleButtonEvent {
+    NSLog(@"业务操作");
+}
+
 
 #pragma mark handle Even
 

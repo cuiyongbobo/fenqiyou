@@ -41,6 +41,16 @@
     
 }
 
+#pragma mark navigation back
+- (void)navigationGobackHandleButtonEvent {
+    NSLog(@"go back");
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)navigationRightHandleButtonEvent {
+    NSLog(@"业务操作");
+}
+
 #pragma - mark STLivenessDetectorDelegate
 
 // 每个模块开始检测时会回调此方法
