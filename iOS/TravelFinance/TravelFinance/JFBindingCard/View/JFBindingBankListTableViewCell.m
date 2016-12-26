@@ -17,12 +17,12 @@
 
 
 - (void)bindeDataWithViewModel:(JFBankListModel *) viewModel {
+    
     // 单笔限额5000元  单日500000元
     self.bindingBankNameLabel.text = viewModel.bankName;
     self.bindingBankLogoImageVIew.image = [UIImage imageNamed:viewModel.bankCode];
-    self.bindingBankInformationLabel.text = [NSString stringWithFormat:@"单笔限额%@元  单日%@元",viewModel.singleQuota,viewModel.singleDayLimit];
+    self.bindingBankInformationLabel.text = [NSString stringWithFormat:@"单笔限额%@万  单日%@万",viewModel.singleQuota,viewModel.singleDayLimit];
 }
-
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
